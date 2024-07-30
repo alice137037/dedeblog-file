@@ -6,4 +6,4 @@ git add -A
 
 git commit -m 'deploy'
 
-git@github.com:alice137037/dedeblog-file.git#向存储库推送
+git@github.com:alice137037/dedeblog-file.git main #向存储库推送
