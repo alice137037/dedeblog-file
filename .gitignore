@@ -1,0 +1,3 @@
+# Ignore @Extras and .obsidian directories
+@Extras/
+.obsidian/

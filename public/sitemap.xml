@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>http://localhost:1313/en/sitemap.xml</loc>
-    
-      <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:1313/zh-cn/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:1313/ar/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://blog.linsnow.cn/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.linsnow.cn/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.linsnow.cn/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.linsnow.cn/categories/</loc>
+  </url><url>
+    <loc>https://blog.linsnow.cn/links/</loc>
+  </url><url>
+    <loc>https://blog.linsnow.cn/search/</loc>
+  </url><url>
+    <loc>https://blog.linsnow.cn/tags/</loc>
+  </url><url>
+    <loc>https://blog.linsnow.cn/categories/test/</loc>
+  </url><url>
+    <loc>https://blog.linsnow.cn/%E5%85%B3%E4%BA%8E/</loc>
+  </url>
+</urlset>
