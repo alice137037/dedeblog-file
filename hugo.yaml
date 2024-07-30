@@ -1,11 +1,9 @@
-## 模仿申请中，但是还没有进行具体的使用。
-
 baseurl: https://blog.linsnow.cn/
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 7
-title: dededede's Blog
-copyright: 
+title: L1nSn0w's Blog
+copyright: L1nSn0w
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -18,10 +16,10 @@ hasCJKLanguage: true
 languages:
     zh-cn:
         languageName: 中文
-        title: dededede's Blog
+        title: L1nSn0w's Blog
         weight: 1
         params:
-            description: 转码记事簿📔
+            description: 无限进步.✍️
     # en:
     #     languageName: Notes
     #     title: L1nSn0w's Notes
@@ -209,13 +207,19 @@ menu:
     main: []
 
     social:
+        - identifier: rss
+          name: RSS
+          url: /index.xml
+          params:
+            newTab: true
+            icon: rss
         
         - identifier: github
           name: GitHub
           url: https://github.com/lin-snow
           params:
             newTab: true
-            icon: logogithub
+            icon: brand-github
             
         - identifier: memos
           name: Memos
