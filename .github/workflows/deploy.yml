@@ -32,7 +32,7 @@ jobs:
               run: hugo --minify --gc
 
             - name: Deploy # 部署到 GitHub Page
-              uses: peaceiris/actions-gh-pages@v3
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   # 如果在同一个仓库下使用请使用 github_token 并注释 deploy_key
                   # github_token: ${{ secrets.GITHUB_TOKEN }}
