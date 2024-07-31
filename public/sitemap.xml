@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.linsnow.cn/</loc>
+    <loc>/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/page/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.linsnow.cn/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <loc>/page/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.linsnow.cn/page/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <loc>/page/about/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.linsnow.cn/posts/2024-7-31day14h50m25s/</loc>
+    <loc>/_index.zh-cn/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/categories/</loc>
+    <loc>/posts/2024-7-31day14h50m25s/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/links/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/posts/</loc>
+    <loc>/page/links/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/search/</loc>
+    <loc>/posts/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/tags/</loc>
+    <loc>/page/search/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/categories/test/</loc>
+    <loc>/tags/</loc>
   </url><url>
-    <loc>https://blog.linsnow.cn/%E5%85%B3%E4%BA%8E/</loc>
+    <loc>/categories/test/</loc>
   </url>
 </urlset>
