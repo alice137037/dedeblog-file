@@ -1,18 +1,57 @@
-module:
-    hugoVersion:
-        extended: true
-        min: "0.87.0"
+baseurl: https://dedeblog-file2.vercel.app/
+languageCode: zh-cn
+theme: hugo-theme-stack
+paginate: 7
+title: dede's Blog
+copyright: dededuud
+
+# Theme i18n support
+# Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
+DefaultContentLanguage: zh-cn
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+languages:
+    zh-cn:
+        languageName: 中文
+        title: dede's Blog
+        weight: 1
+        params:
+            description: 转码日志🏄‍♀️
+    # en:
+    #     languageName: Notes
+    #     title: L1nSn0w's Notes
+    #     weight: 2
+    #     params:
+    #         description: Infinite Progress.🖥️
+
+services:
+    # Change it to your Disqus shortname before using
+    disqus:
+        shortname: "hugo-theme-stack"
+    # GA Tracking ID
+    googleAnalytics:
+        id:
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
 
 params:
     mainSections:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: /touxiang/favicon.jpg # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    ## 需改正之处
+    ## 指定网站的 favicon（网站图标）的路径。这里指定的路径是 /img/favicon.ico，这意味着网站图标存放在站点文件夹的 static/img 文件夹中。
 
     footer:
-        since:
-        customText:
+        since: 2024
+        customText: <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023006542</a>
+        # 有自己域名后，更改为自己的域名
 
     dateFormat:
         published: Jan 02, 2006
@@ -20,26 +59,24 @@ params:
 
     sidebar:
         compact: false
-        emoji:
-        subtitle:
+        emoji: 🌱  ##暂时不想要emoji
+        subtitle: 转码日志🏄‍♀️
         avatar:
             enabled: true
-            local: true
-            src: img/avatar.png
+            local: false
+            src: touxiang/1.jpg ##存储在static中
 
     article:
-        headingAnchor: false
-        math: false
+        math: true     ## 需要数学公式
         toc: true
         readingTime: true
         license:
-            enabled: false
+            enabled: true
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
-
+        enabled: true # 是否启动评论功能
+        provider: waline
         disqusjs:
             shortname:
             apiUrl:
@@ -71,20 +108,23 @@ params:
             clientSecret:
             autoCreateIssue: false
 
-        # Waline client configuration see: https://waline.js.org/en/reference/client/props.html
+        # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
-            serverURL:
-            lang:
-            visitor:
-            avatar:
+            serverURL: https://comment.linsnow.cn
+            lang: zh-CN
+            pageview: true
+            search: false
+            copyright: false
             emoji:
-                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+                - /source/Sticker-100/
             requiredMeta:
-                - nick
-                - mail
+                - name
+                - email
             locale:
-                admin: Admin
-                placeholder:
+                admin: dede🧐
+                placeholder: 👣踩一踩.
+            reaction: false
+
 
         twikoo:
             envId:
@@ -92,19 +132,22 @@ params:
             path:
             lang:
 
+        # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+        cactus:
+            defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
+            serverName: "cactus.chat"
+            siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+
         giscus:
             repo:
             repoID:
             category:
             categoryID:
             mapping:
-            strict:
             lightTheme:
             darkTheme:
             reactionsEnabled: 1
             emitMetadata: 0
-            inputPosition:
-            lang:
 
         gitalk:
             owner:
@@ -116,10 +159,20 @@ params:
         cusdis:
             host:
             id:
-
     widgets:
-        homepage: []
-        page: []
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 3
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
 
     opengraph:
         twitter:
@@ -144,6 +197,69 @@ params:
 
     imageProcessing:
         cover:
-            enabled: true
+            enabled: false
         content:
-            enabled: true
+            enabled: false
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main: []
+
+    social:
+        - identifier: rss
+          name: RSS
+          url: /index.xml
+          params:
+            newTab: true
+            icon: rss
+        
+        - identifier: github
+          name: GitHub
+          url: https://github.com/lin-snow
+          params:
+            newTab: true
+            icon: brand-github
+            
+        - identifier: memos
+          name: Memos
+          url: https://memos.linsnow.cn
+          params:
+            newTab: true
+            icon: memos
+
+        - identifier: gallery
+          name: Gallery
+          url: https://gallery.linsnow.cn
+          params:
+            newTab: true
+            icon: gallery
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: false
+        lineNumbersInTable: true
+        tabWidth: 4
