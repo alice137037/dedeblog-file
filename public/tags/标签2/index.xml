@@ -12,8 +12,16 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/%E6%A0%87%E9%A2%98/</guid>
-        <description>&lt;p&gt;测试hi&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/dedepicture/Pasted%20image%2020240801161127.png&#34;
+        <description>&lt;img src="http://localhost:1313/%E5%B0%81%E9%9D%A2" alt="Featured image of post 标题" /&gt;&lt;p&gt;测试hi
+&lt;img src=&#34;http://localhost:1313/Pasted%20image%2020240801173428.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/Pasted%20image%2020240801173119.png&#34;
 	
 	
 	

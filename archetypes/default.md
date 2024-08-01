@@ -1,19 +1,16 @@
 ---
-title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-draft: true
 title: 标题
+draft: true
 description: 小标题
-featured: false
+featured: true
 image: 封面
-keywords:
-  - 关键词1
-  - 关键词2
+keywords: 
 slug: 
 canonicalURL: 
 categories:
   - 分类
 math: false
 tags:
-  - 标签1
-  - 标签2
+  - 测试
+date:
 ---
