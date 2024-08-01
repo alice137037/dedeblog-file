@@ -1,4 +1,4 @@
-baseurl: "dededuud.cn"
+baseurl: "https://dedeblog-file2.vercel.app/"
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 7
