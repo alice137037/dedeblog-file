@@ -1,4 +1,4 @@
-baseurl: https://dedeblog-file2.vercel.app/
+baseurl: "dededuud.cn"
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 7
@@ -44,9 +44,10 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /touxiang/favicon.jpg # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /touxiang/1.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
     ## 需改正之处
-    ## 指定网站的 favicon（网站图标）的路径。这里指定的路径是 /img/favicon.ico，这意味着网站图标存放在站点文件夹的 static/img 文件夹中。
+    ## 是生成图片导航栏中，前面一个小小的内容~ 
+    ##指定网站的 favicon（网站图标）的路径。这里指定的路径是 /img/favicon.ico，这意味着网站图标存放在站点文件夹的 static/img 文件夹中。
 
     footer:
         since: 2024
@@ -110,13 +111,13 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
-            serverURL: https://comment.linsnow.cn
+            serverURL: https://comment.linsnow.cn #自己dede
             lang: zh-CN
             pageview: true
             search: false
             copyright: false
             emoji:
-                - /source/Sticker-100/
+                - /resources/Sticker-100/
             requiredMeta:
                 - name
                 - email
@@ -159,6 +160,8 @@ params:
         cusdis:
             host:
             id:
+
+# 不懂
     widgets:
         homepage:
             - type: search
@@ -174,6 +177,7 @@ params:
         page:
             - type: toc
 
+# 不懂
     opengraph:
         twitter:
             # Your Twitter username
@@ -187,14 +191,14 @@ params:
             enabled: false
             local: false
             src:
-
+# 自由选择深色或浅色模式切换
     colorScheme:
         # Display toggle
         toggle: true
 
         # Available values: auto, light, dark
         default: auto
-
+# 是否启用封面图片处理
     imageProcessing:
         cover:
             enabled: false
@@ -212,26 +216,26 @@ menu:
           name: RSS
           url: /index.xml
           params:
-            newTab: true
+            newTab: true ## 是否在新标签中打开
             icon: rss
         
         - identifier: github
           name: GitHub
-          url: https://github.com/lin-snow
+          url: https://github.com/lin-snow ## dede修改
           params:
             newTab: true
             icon: brand-github
             
         - identifier: memos
           name: Memos
-          url: https://memos.linsnow.cn
+          url: https://memos.linsnow.cn ## dede修改
           params:
             newTab: true
             icon: memos
 
         - identifier: gallery
           name: Gallery
-          url: https://gallery.linsnow.cn
+          url: https://gallery.linsnow.cn ## dede修改
           params:
             newTab: true
             icon: gallery
@@ -252,7 +256,7 @@ markup:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
     tableOfContents:
-        endLevel: 4
+        endLevel: 5 ## 最大标题层级
         ordered: true
         startLevel: 2
     highlight:

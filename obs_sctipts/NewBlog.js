@@ -20,7 +20,7 @@ function getCreateTimeAsFileName() {
 async function executeCommand() {
   const fileName = getCreateTimeAsFileName() + ".md";
   const hugoPath = "D:\\hugo\\bin\\hugo.exe"; // 替换为hugo的实际路径
-  const { stdout, stderr } = await exec(`${hugoPath} new posts/${fileName}`, {
+  const { stdout, stderr } = await exec(`${hugoPath} new post/${fileName}`, {
     cwd: app.fileManager.vault.adapter.basePath,
   });
   console.log("stdout:", stdout);
