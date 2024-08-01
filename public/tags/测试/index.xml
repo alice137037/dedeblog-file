@@ -2,17 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>测试 on dede&#39;s Blog</title>
-        <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
+        <link>https://dedeblog-file2.vercel.app/tags/%E6%B5%8B%E8%AF%95/</link>
         <description>Recent content in 测试 on dede&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>dededuud</copyright><atom:link href="http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>dededuud</copyright>
+        <lastBuildDate>Fri, 19 May 2000 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>标题</title>
-        <link>http://localhost:1313/p/%E6%A0%87%E9%A2%98/</link>
+        <link>https://dedeblog-file2.vercel.app/p/%E6%A0%87%E9%A2%98/</link>
+        <pubDate>Fri, 19 May 2000 00:00:00 +0000</pubDate>
+        
+        <guid>https://dedeblog-file2.vercel.app/p/%E6%A0%87%E9%A2%98/</guid>
+        <description>&lt;img src="https://dedeblog-file2.vercel.app/%E5%B0%81%E9%9D%A2" alt="Featured image of post 标题" /&gt;&lt;p&gt;hihihi&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>标题</title>
+        <link>https://dedeblog-file2.vercel.app/p/%E6%A0%87%E9%A2%98/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E6%A0%87%E9%A2%98/</guid>
-        <description>&lt;img src="http://localhost:1313/Pasted%20image%2020240801174801.png" alt="Featured image of post 标题" /&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/Pasted%20image%2020240801174801.png&#34;
+        <guid>https://dedeblog-file2.vercel.app/p/%E6%A0%87%E9%A2%98/</guid>
+        <description>&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240801174801.png" alt="Featured image of post 标题" /&gt;&lt;p&gt;&lt;img src=&#34;https://dedeblog-file2.vercel.app/Pasted%20image%2020240801174801.png&#34;
 	
 	
 	

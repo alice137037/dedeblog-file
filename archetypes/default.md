@@ -9,7 +9,7 @@ slug:
 canonicalURL: 
 categories:
   - 分类
-math: false
+math: true
 tags:
   - 测试
 date:
