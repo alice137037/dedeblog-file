@@ -44,7 +44,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /touxiang/1.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /img/1.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
     ## 需改正之处
     ## 是生成图片导航栏中，前面一个小小的内容~ 
     ##指定网站的 favicon（网站图标）的路径。这里指定的路径是 /img/favicon.ico，这意味着网站图标存放在站点文件夹的 static/img 文件夹中。
@@ -64,8 +64,8 @@ params:
         subtitle: 转码日志🏄‍♀️
         avatar:
             enabled: true
-            local: false
-            src: touxiang/1.jpg ##存储在static中
+            local: true
+            src: "/images/avatar.png" ##存储在static中
 
     article:
         math: true     ## 需要数学公式
@@ -120,7 +120,7 @@ params:
                 - /resources/Sticker-100/
             requiredMeta:
                 - name
-                - email
+              #  - email
             locale:
                 admin: dede🧐
                 placeholder: 👣踩一踩.
@@ -201,7 +201,7 @@ params:
 # 是否启用封面图片处理
     imageProcessing:
         cover:
-            enabled: false
+            enabled: true
         content:
             enabled: false
 
@@ -267,3 +267,4 @@ markup:
         lineNos: false
         lineNumbersInTable: true
         tabWidth: 4
+

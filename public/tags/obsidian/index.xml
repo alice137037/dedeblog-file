@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Obsidian on dede&#39;s Blog</title>
+        <link>https://dedeblog-file2.vercel.app/tags/obsidian/</link>
+        <description>Recent content in Obsidian on dede&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>dededuud</copyright>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/tags/obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>hugo&#43;obsidian搭建个人博客记录1️⃣</title>
+        <link>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</guid>
+        <description>&lt;img src="https://dedeblog-file2.vercel.app/b1fcd2f7-412b-4375-8dc3-e6314b3b4f62.jpeg" alt="Featured image of post hugo&#43;obsidian搭建个人博客记录1️⃣" /&gt;&lt;h2 id=&#34;起步&#34;&gt;起步
+&lt;/h2&gt;&lt;p&gt;搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非常心动。于是就有这个&lt;code&gt;dededuud&#39;blog&lt;/code&gt;啦！&lt;/p&gt;
+&lt;p&gt;【平台选择】&lt;/p&gt;
+&lt;p&gt;依旧延续自己举棋不定的风格，有“搭建博客”这个想法后第一步是全平台狂搜：搭建博客的平台选择；WordPress优缺点；Hugo优缺点；Hexo优缺点；相关主题的美观程度；友邻博客的浏览……&lt;/p&gt;
+&lt;p&gt;考虑到：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;重度拖延症要赶紧动起来，所以希望平台搭建简洁方便&lt;/li&gt;
+&lt;li&gt;相对主题好看，不需要太冗杂，搭建后我这个懒蛋过了这个时期后其实不太会探索更多内容。&lt;/li&gt;
+&lt;li&gt;稳定，不想再重复搭建TAT&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;基于这几点，综合来看选择了&lt;code&gt;hugo&lt;/code&gt;。下面是自己的搭建过程，注意：没有详细的操作内容，可以点进去参考链接查看具体内容，大部分是个人向配置记录与报错解决。看起来我真的很多错误处理&lt;/p&gt;
+&lt;h2 id=&#34;hugo搭建&#34;&gt;hugo搭建
+&lt;/h2&gt;&lt;p&gt;主参考教程如下：&lt;/p&gt;
+&lt;h3 id=&#34;参考链接&#34;&gt;参考链接
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/87431&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的Hugo博客搭建记录 - 少数派&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/689914889&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;# 【阿里云服务器】学生党免费白嫖阿里云服务器10个月教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.aliyun.com/zh/dws/user-guide/quickly-register-a-new-domain-name?spm=a2c4g.11174283.0.0.5129de53sB9hBK&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方文档：# 从域名注册到搭建网站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://beian.aliyun.com/pcContainer/myorder?spm=a2c4g.11186623.0.0.74e75817Bq0MFc&amp;amp;accounttraceid=7d8f5e923dd7432787df19b8a5de406adndu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;备案&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;搭建过程&#34;&gt;搭建过程
+&lt;/h3&gt;&lt;p&gt;具体搭建过程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;下载：hugo、git、vscode、obsidian（已有）
+&lt;ul&gt;
+&lt;li&gt;git配置，与github链接&lt;/li&gt;
+&lt;li&gt;购买阿里云服务器（上述链接，学生免费获得10个月）（后续没有用到，托管到github上）&lt;/li&gt;
+&lt;li&gt;购买阿里云域名（花费35元）（至今还没有审核成功）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;基本配置：使用模版&lt;code&gt;stack&lt;/code&gt;，下载复制相关文件夹。修改，&lt;code&gt;config.yaml&lt;/code&gt;，更新自己设置
+&lt;ul&gt;
+&lt;li&gt;⚠️ 任何修改尽量不要在主题文件夹修改，免得以后忘了都修改过什么内容，更新主题的时候把自己配置的内容覆盖了。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;localhost:1313 预览&lt;/li&gt;
+&lt;li&gt;文章&lt;code&gt;yaml&lt;/code&gt;模版设置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;部署到Vercel
+&lt;ul&gt;
+&lt;li&gt;git将文件push到github，github与Vercel联动部署&lt;/li&gt;
+&lt;li&gt;设置github page（页面效果没有Vercel好看）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;仓库文件组成&#34;&gt;仓库文件组成
+&lt;/h3&gt;&lt;p&gt;整个网站目录里，几个重要的文件夹：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;assets：存放图标、图片、js(ts)脚本文件，css(scss)样式文件；&lt;/li&gt;
+&lt;li&gt;content：文章、页面、分类页面等文件；&lt;/li&gt;
+&lt;li&gt;layouts：网页布局文件；&lt;/li&gt;
+&lt;li&gt;public：hugo 编译后的网站文件夹；&lt;/li&gt;
+&lt;li&gt;static：图片等静态文件；&lt;/li&gt;
+&lt;li&gt;themes：主题文件夹。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;个人的文件夹tips&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;obs_sctipts 目录用于存放 QuickAdd 脚本文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;page&lt;/code&gt;修改page下的&lt;code&gt;index.zh-cn&lt;/code&gt; 中title可以更改导航栏名称&lt;/li&gt;
+&lt;li&gt;文章的图片都存在&lt;code&gt;static&lt;/code&gt;下。这样可以实现在obsidian中写文章，粘贴图片，自动放置在static文件夹下，obsidian内可以看到图片且博客也可以展示图片，而且不需要再手动更改👍&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;有两种pictures等文件存放方式比较建议。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;post&lt;/code&gt;文件夹下一篇文章是一个文件夹，文件夹里文章文件命名为&lt;code&gt;index.md&lt;/code&gt;，所有图片文件都存放在这个文件夹下，引用时直接用图片名就可以&lt;code&gt;![图名](image.png)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;post&lt;/code&gt;文件夹下直接存放 Markdown 文件，图片存储在&lt;code&gt;static/images&lt;/code&gt;文件夹下，引用时&lt;code&gt;![图名](/images/image.png)&lt;/code&gt;（obsidian）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dedeblog
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── archetypes                内容模版目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── default.md            新建文章的模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── assets                    存放图标、图片、js，css
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── icons                 svg的小图标类
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── images                存放头像
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── scss                  一些css文件的配置情况（可以修改背景颜色）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── content                   内容目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── cagtegories           分类的页面目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── page                  存放左侧导航栏的一些配置
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── post                  文章md文章
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── data                      数据目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── i18n                      数据目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── layouts                   网站模版目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── 404.html              404面目模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── _default              默认模版目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   │   ├── baseof.html       基础模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   │   ├── list.html         列表页面模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   │   └── single.html       单页面模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── index.html            首页模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── partials              模块模版目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       ├── head.html         HEAD模块模版
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       ├── head_fonts.html
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       ├── hook_head_end.html
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│       └── sidebar.html
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── obs_sctipts               Obsidian的一些建设内容，自动化内容
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── static                    静态文件目录（存放文章页面的一些图片）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── themes                    主题目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── public                    hugo 编译后的网站
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── .gitignore                上传到仓库内忽略的内容
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── config.yaml              
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── deploy.sh                 备份的半自动文件
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;文章模版&#34;&gt;文章模版
+&lt;/h3&gt;&lt;p&gt;具体来说，&lt;code&gt;draft&lt;/code&gt;是否为草稿，&lt;code&gt;image&lt;/code&gt;同样引用/static下的图片。&lt;code&gt;date&lt;/code&gt;手动选择（本来有代码可以根据文章生成时间自动填写，但是自己总是报错，于是放弃）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: 标题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;draft: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;description: 小标题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;featured: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;image: 封面
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;keywords: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;slug: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;canonicalURL: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;categories:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - 分类
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;math: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tags:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - 测试
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;github-action自动上传&#34;&gt;Github Action自动上传
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/497671233&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;# Hugo 博客写作最佳实践&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.linsnow.cn/p/deploy-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;linsnow部署hugo网站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考上述内容整合后，可以实现功能如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;dedeblog用于存放hugo博客生成的文件；dedeblog-file 用于存放原码。&lt;/li&gt;
+&lt;li&gt;自动化上传github，使用deploy.sh 文件（通过 git bash），自动上传加载。&lt;/li&gt;
+&lt;li&gt;双击打开运行&lt;code&gt;deploy.sh&lt;/code&gt;即可自动推送文件到仓库,以后写完博客或修改博客后都需要运行一下&lt;code&gt;deploy.sh&lt;/code&gt;,才能部署到云&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;错误一览&#34;&gt;错误一览
+&lt;/h3&gt;&lt;h4 id=&#34;除了主页外其他页面的头像无法正常显示&#34;&gt;除了主页外，其他页面的头像无法正常显示
+&lt;/h4&gt;&lt;p&gt;呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/977&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;site-avatar无法正常显示 · Issue #977 · CaiJimmy/hugo-theme-stack · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;把头像放到 &lt;code&gt;assets&lt;/code&gt; 文件夹下，然后 &lt;code&gt;local = true&lt;/code&gt;或者改成 `src = &amp;ldquo;/images/favicon.png&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;链接obsidian&#34;&gt;链接Obsidian
+&lt;/h2&gt;&lt;h3 id=&#34;第一次尝试&#34;&gt;第一次尝试
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.morick66.com/p/20240321055915/#%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0memos&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的Hugo博客搭建记录&lt;/a&gt;
+部分内容看不太懂（尤其是添加按钮阶段，总觉得特别奇怪）？困惑？以及感慨一下Dataview功能的可塑性。&lt;/p&gt;
+&lt;h3 id=&#34;第二次尝试&#34;&gt;第二次尝试
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/497671233&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo博客一键上传+自动创建文章+静态资源图床建设&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/497682431&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo仪表盘&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/680539092&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;集成管理+增加按钮&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/2122085&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown博客文章写作最佳体验，hugo+Obisidian+Vscode-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.zhangyingwei.com/posts/2022m4d11h19m42s28/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo 博客写作最佳实践 | 胡说&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以上文章链接均是出自于一个作者的系列文章，整体看下来受益匪浅。
+目前自己obsidian的看板如下（还没有过多美化），按钮只有&lt;code&gt;新建博客&lt;/code&gt;一项，可以自动新建一篇固定模版的md文件到/content/post/路径下，可以根据勾选项draft，选择是否发布（超级爽）
+&lt;img src=&#34;https://dedeblog-file2.vercel.app/Pasted%20image%2020240802154512.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;已有插件&#34;&gt;已有插件
+&lt;/h3&gt;&lt;p&gt;该仓库是新建的一个仓库，没有下载过多美化的插件，现在保留的都是支持功能+非常实用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Auto Link Title&lt;/li&gt;
+&lt;li&gt;Buttons&lt;/li&gt;
+&lt;li&gt;Charts&lt;/li&gt;
+&lt;li&gt;Commander&lt;/li&gt;
+&lt;li&gt;Dataview&lt;/li&gt;
+&lt;li&gt;Emoji Toolbar&lt;/li&gt;
+&lt;li&gt;Homepage&lt;/li&gt;
+&lt;li&gt;QuickAdd&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;错误一览-1&#34;&gt;错误一览
+&lt;/h3&gt;&lt;h4 id=&#34;自动生成文件报错&#34;&gt;自动生成文件报错
+&lt;/h4&gt;&lt;p&gt;通过&lt;code&gt;quickadd&lt;/code&gt;一键生成文件总是报错：×放弃，自动化生成文件都是报错&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;plugin:quickadd:17783 QuickAdd: (ERROR) failed to run user script NewBlog. Error:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command failed: hugo new posts/2024-7-30day17h7m0s.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;hugo&amp;#39; �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;���������ļ���
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;√没放弃！！！发现是没有hugo的环境，配置了绝对环境后，就ok了！真的流眼泪了TAT，非常流眼泪。居然这样就解决了呜呜呜呜呜呜&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;##&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;之前&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;stdout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;stderr&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;await&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;exec&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hugo new posts/&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fileName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,{&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;cwd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fileManager&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;vault&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;adapter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;basePath&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;##&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;更改后&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hugoPath&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\hugo\\bin\\hugo.exe&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 替换为hugo的实际路径
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;stdout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;stderr&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;await&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;exec&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hugoPath&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt; new post/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fileName&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;cwd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fileManager&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;vault&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;adapter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;basePath&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;});&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意一点：stack模版中！存储文章的地方是&lt;code&gt;post&lt;/code&gt;而不是&lt;code&gt;posts&lt;/code&gt;!!!有部分错误的原因来源于此。&lt;/p&gt;
+&lt;h4 id=&#34;博客中一级与二级目录一致无区分&#34;&gt;博客中一级与二级目录一致，无区分
+&lt;/h4&gt;&lt;p&gt;取消一级目录，文章直接从二级目录开始写起
+&lt;img src=&#34;https://dedeblog-file2.vercel.app/Pasted%20image%2020240802162214.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;dateview识别不出来前缀&#34;&gt;dateview识别不出来前缀
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;---&lt;/code&gt;后面不要有空格！！！！
+冒号后面要有空格！！&lt;/p&gt;
+&lt;h4 id=&#34;无法安装插件git&#34;&gt;无法安装插件“GIT”
+&lt;/h4&gt;&lt;p&gt;为什么？W五方面？为什么？为什么？为什么？为什么？？？？？？&lt;/p&gt;
+&lt;p&gt;why？？？
+奥，，网太慢了&lt;/p&gt;
+&lt;h4 id=&#34;git插件和教程不一致&#34;&gt;git插件和教程不一致
+&lt;/h4&gt;&lt;p&gt;“Git is not ready. when all settings are correct you canconfigure auto backup, etc.
+I am having the same issue, even though the vault opened is cloned from my repo. This is what it shows me when I start Obsidian -”&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/t/topic/33184&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Site Unreachable&lt;/a&gt;
+呜呜呜感谢！应该是这样子的：
+在Custom Git directory path 填上安装路径，忘记安装路径可以运行下面代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:&lt;span class=&#34;se&#34;&gt;\d&lt;/span&gt;ede-downdown&lt;span class=&#34;se&#34;&gt;\G&lt;/span&gt;it&lt;span class=&#34;se&#34;&gt;\c&lt;/span&gt;md&lt;span class=&#34;se&#34;&gt;\g&lt;/span&gt;it.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;where git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;尝试obsidian-gitpull自动化并放弃&#34;&gt;尝试obsidian gitpull自动化，并放弃
+&lt;/h4&gt;&lt;p&gt;zhuanlan.zhihu.com/p/657924375](&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/657924375&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://zhuanlan.zhihu.com/p/657924375&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/pythondh1/article/details/134242400&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;obsidian使用github同步踩坑教程_obsidian git-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;push 不上去啊 放弃了用git 一键推送，不要东一榔头西一棒槌&lt;/p&gt;
+&lt;h2 id=&#34;图床&#34;&gt;图床
+&lt;/h2&gt;&lt;p&gt;自己刚开始抱希望于单独托管在图床，通过外链引用，这样子比较方便，速度也快。于是经过漫长的尝试后，终于放！弃！啦！又重新回归obsidian本地存储的方式。这里是记录探索过程，希望对大家有一定的参考意义。&lt;/p&gt;
+&lt;h3 id=&#34;githubpicgo&#34;&gt;github+picgo
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://post.smzdm.com/p/a5x72ov8/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;将 Obsidian 结合 PicGo 和 Image Auto Upload 插件，并使用 GitHub 作为图床_服务软件_什么值得买&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;github图片显示太慢了，不连梯完全加载不出来，影响阅读体验。❌&lt;/p&gt;
+&lt;h3 id=&#34;giteepicgo&#34;&gt;gitee+picgo
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/m0_49448331/article/details/136899591&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Obsidian+PicGo+Gitee搭建免费图床_gitee 图床-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_57581439/article/details/129251624?spm=1001.2014.3001.5506&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用gitee搭建图床，并解决防盗链问题_gitee图床-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;进程&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;已经下载node.js（配置好环境）✔️&lt;/li&gt;
+&lt;li&gt;搭建图床仓库，gitee+picgo✔️&lt;/li&gt;
+&lt;li&gt;在obsidian 中下载第三方插件 image auto upload plugin✔️&lt;/li&gt;
+&lt;li&gt;防盗链，在博客完全显示不了图片❌&lt;/li&gt;
+&lt;li&gt;尝试解决❌ out
+&lt;strong&gt;小tips&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;从现在开始，你所有 Obsidian 中的图片，都会自动上传到图片，在 Obsidian 中，仅仅保存一个链接。那么问题来了：我之前notes中的图片怎么上传呢？你可以以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl / Command + P，并选择 &amp;ldquo;upload all images&amp;rdquo;。&lt;/p&gt;
+&lt;h3 id=&#34;阿里云七牛云picgo&#34;&gt;阿里云/七牛云+picgo
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/chuangblog/p/17654579.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;解决Typora+阿里云+PicGo部分图片上传失败的问题 - 最爱喝开水 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;太贵了我是穷鬼🥺&lt;/p&gt;
+&lt;h3 id=&#34;minio&#34;&gt;MinIO
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_57581439/article/details/126192492?spm=1001.2014.3001.5502&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用Docker搭建分布式文件存储系统MinIO_minio docker-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_60308100/article/details/134651592?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172248319116800182794990%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;amp;request_id=172248319116800182794990&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-134651592-null-null.142%5ev100%5epc_search_result_base2&amp;amp;utm_term=MinIO%E5%9B%BE%E5%BA%8A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Typora+PicGo+Minio搭建博客图床_minio图床-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;仅阅读未实践&lt;/p&gt;
+&lt;h3 id=&#34;尝试上传阿里服务器&#34;&gt;尝试上传阿里服务器
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/bashenandi/p/linux-aliyun-ecs-ssh.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;阿里云ECS每天一件事D1：配置SSH - 雨帝夜泪 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/BAR_WORKSHOP/article/details/121078946?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=hugo%20%E9%98%BF%E9%87%8C%E4%BA%91&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-121078946.142%5ev100%5epc_search_result_base2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用 Hugo 和阿里云ECS搭建个人站_hugo server -d ip-CSDN博客&lt;/a&gt;（主要）&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/LynneHuan/p/17822201.html#2023-04-05%E6%9B%B4%E6%96%B0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用aliyun+hugo搭建个人博客 - LynneHuan - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;放弃了，就目前这样挺好的，我很满意（缓缓躺下&lt;/p&gt;
+&lt;h3 id=&#34;错误一览-2&#34;&gt;错误一览
+&lt;/h3&gt;&lt;p&gt;没想到吧，连放弃的内容都有错误一览&lt;/p&gt;
+&lt;h4 id=&#34;nodejs测试时npm下载内容不成功&#34;&gt;node.js测试时，npm下载内容不成功
+&lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/HL031125/article/details/138816270&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js安装及环境配置（超详细！保姆级！！）_nodejs安装及环境配置-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;发现是网络问题，配置镜像网站&lt;/p&gt;
+&lt;h3 id=&#34;obsidian-picgo上传图床失败&#34;&gt;obsidian picgo上传图床失败
+&lt;/h3&gt;&lt;p&gt;设置完图床点击 设为默认图床&lt;/p&gt;
+&lt;h2 id=&#34;魔改ing&#34;&gt;魔改ing
+&lt;/h2&gt;&lt;p&gt;.ico是 小小小小小的图标
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/2201_75288929/article/details/132507563&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【Hugo】Stack主题的使用记录_hugo stack-CSDN博客&lt;/a&gt; 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
+&lt;a class=&#34;link&#34; href=&#34;https://blog.linsnow.cn/p/modify-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;（3）Stack主题的自定义&lt;/a&gt; 圆角的可爱的&lt;/p&gt;
+&lt;h3 id=&#34;参考链接-1&#34;&gt;参考链接
+&lt;/h3&gt;&lt;p&gt;【学习向】
+&lt;a class=&#34;link&#34; href=&#34;https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;给 Hugo 博客文章自动生成分享图 | Yuanji&amp;rsquo;s Blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【欣赏向】
+简约美 &lt;a class=&#34;link&#34; href=&#34;https://io-oi.me/life/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Life | reuixiy&lt;/a&gt;
+很有趣，小表情很多，mac小表情：&lt;a class=&#34;link&#34; href=&#34;https://blog.linsnow.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;L1nSn0w&amp;rsquo;s Blog&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

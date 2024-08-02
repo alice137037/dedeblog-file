@@ -7,7 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>dededuud</copyright>
-        <lastBuildDate>Fri, 19 May 2000 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo</title>
+        <link>https://dedeblog-file2.vercel.app/tags/hugo/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://dedeblog-file2.vercel.app/tags/hugo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Obsidian</title>
+        <link>https://dedeblog-file2.vercel.app/tags/obsidian/</link>
+        <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://dedeblog-file2.vercel.app/tags/obsidian/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>测试</title>
         <link>https://dedeblog-file2.vercel.app/tags/%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Fri, 19 May 2000 00:00:00 +0000</pubDate>
