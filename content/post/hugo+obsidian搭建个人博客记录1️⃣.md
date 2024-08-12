@@ -145,6 +145,25 @@ date:
 1. dedeblog用于存放hugo博客生成的文件；dedeblog-file 用于存放原码。
 2. 自动化上传github，使用deploy.sh 文件（通过 git bash），自动上传加载。
 3. 双击打开运行`deploy.sh`即可自动推送文件到仓库,以后写完博客或修改博客后都需要运行一下`deploy.sh`,才能部署到云
+### 域名解析
+从7月底申请，到8月12号才正式通过域名备案。
+
+### 二级域名设置
+尝试30min发现这么简单的事情却一直失败，原因是：我的二级域名  blog 输成了 bolg
+
+memos
+
+Photography
+
+[利用阿里云CDN加速vercel上的网站—2023最新可用-CSDN博客](https://blog.csdn.net/weixin_62392149/article/details/135114752)
+
+[zhuanlan.zhihu.com/p/621179830](https://zhuanlan.zhihu.com/p/621179830)
+
+`vercel Generating SSL Certificate` 配置后需要等待一下子，ssl证书生成后，就可以访问啦
+
+Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.
+
+
 ### 错误一览
 #### 除了主页外，其他页面的头像无法正常显示
 呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。
@@ -293,16 +312,3 @@ github图片显示太慢了，不连梯完全加载不出来，影响阅读体�
 设置完图床点击 设为默认图床
 
 
-## 魔改ing
-.ico是 小小小小小的图标
-[【Hugo】Stack主题的使用记录\_hugo stack-CSDN博客](https://blog.csdn.net/2201_75288929/article/details/132507563) 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
-[（3）Stack主题的自定义](https://blog.linsnow.cn/p/modify-hugo/) 圆角的可爱的
-
-### 参考链接
-【学习向】
-[给 Hugo 博客文章自动生成分享图 | Yuanji's Blog](https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/)
-
-
-【欣赏向】
-简约美 [Life | reuixiy](https://io-oi.me/life/)
-很有趣，小表情很多，mac小表情：[L1nSn0w's Blog](https://blog.linsnow.cn/) 

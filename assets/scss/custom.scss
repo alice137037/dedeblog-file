@@ -1,5 +1,14 @@
 //  ~\blog\assets\scss\custom.scss
-
+// 添加字体
+@font-face {
+  font-family: SmileySans; /* 名称自定义 */
+  src: url('/fonts/寒蝉手拙体_猫啃网.ttf') format('truetype');
+  /* 建议采用woff2格式，以降低容量大小，提高加载速度 */
+}
+body {
+  font-family: SmileySans;
+}
+//怎么设置所有文章都是这样子的呢？？现在这样子也太丑了吧？？
 
 
 // 页面基本配色

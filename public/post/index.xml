@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on dede&#39;s Blog</title>
-        <link>https://dedeblog-file2.vercel.app/post/</link>
+        <link>https://blog.dededuud.cn/post/</link>
         <description>Recent content in Posts on dede&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>dededuud</copyright>
-        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dedeblog-file2.vercel.app/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dededuud.cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>hugo&#43;obsidian搭建个人博客记录1️⃣</title>
-        <link>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</link>
+        <link>https://blog.dededuud.cn/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</link>
         <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://dedeblog-file2.vercel.app/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</guid>
-        <description>&lt;img src="https://dedeblog-file2.vercel.app/b1fcd2f7-412b-4375-8dc3-e6314b3b4f62.jpeg" alt="Featured image of post hugo&#43;obsidian搭建个人博客记录1️⃣" /&gt;&lt;h2 id=&#34;起步&#34;&gt;起步
+        <guid>https://blog.dededuud.cn/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/</guid>
+        <description>&lt;img src="https://blog.dededuud.cn/b1fcd2f7-412b-4375-8dc3-e6314b3b4f62.jpeg" alt="Featured image of post hugo&#43;obsidian搭建个人博客记录1️⃣" /&gt;&lt;h2 id=&#34;起步&#34;&gt;起步
 &lt;/h2&gt;&lt;p&gt;搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非常心动。于是就有这个&lt;code&gt;dededuud&#39;blog&lt;/code&gt;啦！&lt;/p&gt;
 &lt;p&gt;【平台选择】&lt;/p&gt;
 &lt;p&gt;依旧延续自己举棋不定的风格，有“搭建博客”这个想法后第一步是全平台狂搜：搭建博客的平台选择；WordPress优缺点；Hugo优缺点；Hexo优缺点；相关主题的美观程度；友邻博客的浏览……&lt;/p&gt;
@@ -142,6 +142,18 @@
 &lt;li&gt;自动化上传github，使用deploy.sh 文件（通过 git bash），自动上传加载。&lt;/li&gt;
 &lt;li&gt;双击打开运行&lt;code&gt;deploy.sh&lt;/code&gt;即可自动推送文件到仓库,以后写完博客或修改博客后都需要运行一下&lt;code&gt;deploy.sh&lt;/code&gt;,才能部署到云&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;域名解析&#34;&gt;域名解析
+&lt;/h3&gt;&lt;p&gt;从7月底申请，到8月12号才正式通过域名备案。&lt;/p&gt;
+&lt;h3 id=&#34;二级域名设置&#34;&gt;二级域名设置
+&lt;/h3&gt;&lt;p&gt;尝试30min发现这么简单的事情却一直失败，原因是：我的二级域名  blog 输成了 bolg&lt;/p&gt;
+&lt;p&gt;memos&lt;/p&gt;
+&lt;p&gt;Photography&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_62392149/article/details/135114752&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;利用阿里云CDN加速vercel上的网站—2023最新可用-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/621179830&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zhuanlan.zhihu.com/p/621179830&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vercel Generating SSL Certificate&lt;/code&gt; 配置后需要等待一下子，ssl证书生成后，就可以访问啦&lt;/p&gt;
+&lt;p&gt;Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.&lt;/p&gt;
 &lt;h3 id=&#34;错误一览&#34;&gt;错误一览
 &lt;/h3&gt;&lt;h4 id=&#34;除了主页外其他页面的头像无法正常显示&#34;&gt;除了主页外，其他页面的头像无法正常显示
 &lt;/h4&gt;&lt;p&gt;呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。&lt;/p&gt;
@@ -166,7 +178,7 @@
     &gt;Hugo 博客写作最佳实践 | 胡说&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;以上文章链接均是出自于一个作者的系列文章，整体看下来受益匪浅。
 目前自己obsidian的看板如下（还没有过多美化），按钮只有&lt;code&gt;新建博客&lt;/code&gt;一项，可以自动新建一篇固定模版的md文件到/content/post/路径下，可以根据勾选项draft，选择是否发布（超级爽）
-&lt;img src=&#34;https://dedeblog-file2.vercel.app/Pasted%20image%2020240802154512.png&#34;
+&lt;img src=&#34;https://blog.dededuud.cn/Pasted%20image%2020240802154512.png&#34;
 	
 	
 	
@@ -209,7 +221,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意一点：stack模版中！存储文章的地方是&lt;code&gt;post&lt;/code&gt;而不是&lt;code&gt;posts&lt;/code&gt;!!!有部分错误的原因来源于此。&lt;/p&gt;
 &lt;h4 id=&#34;博客中一级与二级目录一致无区分&#34;&gt;博客中一级与二级目录一致，无区分
 &lt;/h4&gt;&lt;p&gt;取消一级目录，文章直接从二级目录开始写起
-&lt;img src=&#34;https://dedeblog-file2.vercel.app/Pasted%20image%2020240802162214.png&#34;
+&lt;img src=&#34;https://blog.dededuud.cn/Pasted%20image%2020240802162214.png&#34;
 	
 	
 	
@@ -286,30 +298,15 @@ I am having the same issue, even though the vault opened is cloned from my repo.
 &lt;p&gt;发现是网络问题，配置镜像网站&lt;/p&gt;
 &lt;h3 id=&#34;obsidian-picgo上传图床失败&#34;&gt;obsidian picgo上传图床失败
 &lt;/h3&gt;&lt;p&gt;设置完图床点击 设为默认图床&lt;/p&gt;
-&lt;h2 id=&#34;魔改ing&#34;&gt;魔改ing
-&lt;/h2&gt;&lt;p&gt;.ico是 小小小小小的图标
-&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/2201_75288929/article/details/132507563&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【Hugo】Stack主题的使用记录_hugo stack-CSDN博客&lt;/a&gt; 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
-&lt;a class=&#34;link&#34; href=&#34;https://blog.linsnow.cn/p/modify-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;（3）Stack主题的自定义&lt;/a&gt; 圆角的可爱的&lt;/p&gt;
-&lt;h3 id=&#34;参考链接-1&#34;&gt;参考链接
-&lt;/h3&gt;&lt;p&gt;【学习向】
-&lt;a class=&#34;link&#34; href=&#34;https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;给 Hugo 博客文章自动生成分享图 | Yuanji&amp;rsquo;s Blog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;【欣赏向】
-简约美 &lt;a class=&#34;link&#34; href=&#34;https://io-oi.me/life/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Life | reuixiy&lt;/a&gt;
-很有趣，小表情很多，mac小表情：&lt;a class=&#34;link&#34; href=&#34;https://blog.linsnow.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;L1nSn0w&amp;rsquo;s Blog&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>测试2</title>
-        <link>https://dedeblog-file2.vercel.app/p/%E6%B5%8B%E8%AF%952/</link>
+        <link>https://blog.dededuud.cn/p/%E6%B5%8B%E8%AF%952/</link>
         <pubDate>Fri, 19 May 2000 00:00:00 +0000</pubDate>
         
-        <guid>https://dedeblog-file2.vercel.app/p/%E6%B5%8B%E8%AF%952/</guid>
-        <description>&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240802103545.png" alt="Featured image of post 测试2" /&gt;&lt;p&gt;hihihissssssssssssssss&lt;/p&gt;
+        <guid>https://blog.dededuud.cn/p/%E6%B5%8B%E8%AF%952/</guid>
+        <description>&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802103545.png" alt="Featured image of post 测试2" /&gt;&lt;p&gt;hihihissssssssssssssss&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//  ~&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;log&lt;span class=&#34;se&#34;&gt;\a&lt;/span&gt;ssets&lt;span class=&#34;se&#34;&gt;\s&lt;/span&gt;css&lt;span class=&#34;se&#34;&gt;\c&lt;/span&gt;ustom.scss
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//------------------------------------------------
@@ -344,13 +341,13 @@ I am having the same issue, even though the vault opened is cloned from my repo.
         </item>
         <item>
         <title>测试1</title>
-        <link>https://dedeblog-file2.vercel.app/p/%E6%B5%8B%E8%AF%951/</link>
+        <link>https://blog.dededuud.cn/p/%E6%B5%8B%E8%AF%951/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://dedeblog-file2.vercel.app/p/%E6%B5%8B%E8%AF%951/</guid>
-        <description>&lt;img src="https://dedeblog-file2.vercel.app/Pasted%20image%2020240802092651.png" alt="Featured image of post 测试1" /&gt;&lt;p&gt;ssssssssssssss
+        <guid>https://blog.dededuud.cn/p/%E6%B5%8B%E8%AF%951/</guid>
+        <description>&lt;img src="https://blog.dededuud.cn/Pasted%20image%2020240802092651.png" alt="Featured image of post 测试1" /&gt;&lt;p&gt;ssssssssssssss
 ![][]
-&lt;img src=&#34;https://dedeblog-file2.vercel.app/&#34;
+&lt;img src=&#34;https://blog.dededuud.cn/&#34;
 	
 	
 	
@@ -362,7 +359,7 @@ I am having the same issue, even though the vault opened is cloned from my repo.
 &lt;/h1&gt;&lt;h2 id=&#34;特别好&#34;&gt;特别好
 &lt;/h2&gt;&lt;h1 id=&#34;你好-1&#34;&gt;你好
 &lt;/h1&gt;&lt;p&gt;小表情快捷键
-&lt;img src=&#34;https://dedeblog-file2.vercel.app/Pasted%20image%2020240802100448.png&#34;
+&lt;img src=&#34;https://blog.dededuud.cn/Pasted%20image%2020240802100448.png&#34;
 	
 	
 	
