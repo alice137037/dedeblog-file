@@ -39,3 +39,17 @@ git config --global http.postBuffer 524288000
 Please make sure you have the correct access rights
 and the repository exists.
 ~~~
+在git中输入命令：
+~~~shell
+ ssh -T git@github.com 
+~~~
+
+然后耐心等待，过一会出现一大堆英文。后面括号内会让你输入command（yes/no）。
+
+输入命令：yes
+
+按回车。
+
+然后就会提示你成功了。
+
+最后退出git重新进入路径提交或者git clone一下就可以了。
