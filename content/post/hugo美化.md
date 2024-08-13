@@ -116,6 +116,36 @@ code {
 [自建 不蒜子 API](https://busuanzi.icodeq.com/)
 [hugo+Stack 搭建个人博客](https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC)
 
+添加脚本：`layouts\partials\head\head.html`
+~~~html
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+~~~
+底部显示本站总访问量和访客数，在`layouts\partials\footer\footer.html`文件内添加以下内容：(因为想保持下面字体一致，所以直接添加在尾部，如果想和@字体一致，可以添加`<section class="copyright">`)
+~~~html
+    <div class="busuanzi-footer">
+        <span id="busuanzi_container_site_pv">
+            本站总访问量<span id="busuanzi_value_site_pv" class="highlight-text">次</span>
+        </span>
+        <span id="busuanzi_container_site_uv">
+            本站访客数<span id="busuanzi_value_site_uv" class="highlight-text">人次</span>
+        </span>
+    </div>
+~~~
+
+风格样式：`assets/scss/partials/footer.scss`增加代码，与原有stack尾部信息的风格保持一致，没有个性化修改，加粗数字与单位。
+
+~~~scss
+    .busuanzi-footer {
+        font-size: 1.2rem; 
+        line-height: 1.75; 
+        color: var(--card-text-color-secondary); 
+        font-weight: normal; 
+        .highlight-text {
+            font-weight: bold; 
+        }
+    }
+~~~
+
 
 ### 在归档页增加标签
 有点丑放弃了

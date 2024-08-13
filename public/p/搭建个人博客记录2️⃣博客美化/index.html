@@ -208,7 +208,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 6 分钟
                 </time>
             </div>
         
@@ -299,7 +299,28 @@
     >自建 不蒜子 API</a>
 <a class="link" href="https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC"  target="_blank" rel="noopener"
     >hugo+Stack 搭建个人博客</a></p>
-<h3 id="在归档页增加标签">在归档页增加标签
+<p>添加脚本：<code>layouts\partials\head\head.html</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>底部显示本站总访问量和访客数，在<code>layouts\partials\footer\footer.html</code>文件内添加以下内容：(因为想保持下面字体一致，所以直接添加在尾部，如果想和@字体一致，可以添加<code>&lt;section class=&quot;copyright&quot;&gt;</code>)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;busuanzi-footer&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_site_pv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            本站总访问量<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_pv&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;highlight-text&#34;</span><span class="p">&gt;</span>次<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_site_uv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            本站访客数<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_uv&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;highlight-text&#34;</span><span class="p">&gt;</span>人次<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>风格样式：<code>assets/scss/partials/footer.scss</code>增加代码，与原有stack尾部信息的风格保持一致，没有个性化修改，加粗数字与单位。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">    <span class="nc">.busuanzi-footer</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="na">font-size</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.2</span><span class="kt">rem</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="na">line-height</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.75</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card-text-color-secondary</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">        <span class="na">font-weight</span><span class="o">:</span> <span class="ni">normal</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="nc">.highlight-text</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="na">font-weight</span><span class="o">:</span> <span class="ni">bold</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><h3 id="在归档页增加标签">在归档页增加标签
 </h3><p>有点丑放弃了
 在layouts/_default/archives.html里的<code>&lt;/header&gt;</code>后面加上如下code：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- $taxonomy := $.Site.GetPage &#34;taxonomyTerm&#34; &#34;tags&#34; -}}
@@ -627,7 +648,7 @@
             
         
         发表了<span class="bold-text">3篇</span>文章
-        总计<span class="bold-text">6.65k</span>字
+        总计<span class="bold-text">7.03k</span>字
     </section>
 
 
