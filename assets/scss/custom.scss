@@ -1,14 +1,15 @@
 //  ~\blog\assets\scss\custom.scss
-// 添加字体
-@font-face {
-  font-family: SmileySans; /* 名称自定义 */
-  src: url('/fonts/寒蝉手拙体_猫啃网.ttf') format('truetype');
-  /* 建议采用woff2格式，以降低容量大小，提高加载速度 */
+
+// 头像旋转动画
+.sidebar header .site-avatar .site-logo {
+  transition: transform 1.65s ease-in-out; // 旋转时间
 }
-body {
-  font-family: SmileySans;
+
+.sidebar header .site-avatar .site-logo:hover {
+  transform: rotate(300deg); // 旋转角度为360度
 }
-//怎么设置所有文章都是这样子的呢？？现在这样子也太丑了吧？？
+
+
 
 
 // 页面基本配色
@@ -373,6 +374,7 @@ html {
   }
 
   ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
     background-color: #d6dee1;
     border-radius: 20px;
     border: 6px solid transparent;

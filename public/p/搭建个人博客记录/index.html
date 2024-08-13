@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="美化hugo的一些基本选项">
+<title>搭建个人博客记录</title>
+
+<link rel='canonical' href='http://localhost:1313/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/'>
+
+<link rel="stylesheet" href="/scss/style.min.cf7ed074ed3060b5e21265e12afda3e0ca7b7acaa7a264169547137c6d293ca4.css"><meta property='og:title' content="搭建个人博客记录">
+<meta property='og:description' content="美化hugo的一些基本选项">
+<meta property='og:url' content='http://localhost:1313/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/'>
+<meta property='og:site_name' content='dede&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-08-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-08-12T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="搭建个人博客记录">
+<meta name="twitter:description" content="美化hugo的一些基本选项">
+    <link rel="shortcut icon" href="/img/1.ico" />
+
+  
+
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+<script>  
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended">
+
+
+        <div id="article-toolbar" style="position: sticky;top: 5px;z-index: 1000;">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#修改全站字体">修改全站字体</a></li>
+      </ol>
+    </li>
+    <li><a href="#修改站点的图标">修改站点的图标</a></li>
+    <li><a href="#修改博客背景颜色">修改博客背景颜色</a></li>
+    <li><a href="#头像旋转">头像旋转</a></li>
+    <li><a href="#参考linshow的一些修改内容">参考linshow的一些修改内容</a></li>
+    <li><a href="#魔改ing">魔改ing</a>
+      <ol>
+        <li><a href="#参考链接">参考链接</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" style="background-color: #2a9d8f; color: #fff;">
+                博客建设
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/">搭建个人博客记录</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            美化hugo的一些基本选项
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 12, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>部分修改内容的时候，需要搜索stack主题下的内容。因为不同主题stack下面的文件是不同的。</p>
+<h3 id="修改全站字体">修改全站字体
+</h3><p><strong>位置</strong><code>layouts/partials/head/custom.html</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--article-font-family</span><span class="p">:</span> <span class="s2">&#34;Noto Serif SC&#34;</span><span class="p">,</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">base</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>  <span class="c1">// 正文自重300，标题字重700
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		    <span class="kr">const</span> <span class="nx">customFont</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;link&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		    <span class="nx">customFont</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">&#34;https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;display=swap&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		    <span class="nx">customFont</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s2">&#34;text/css&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		    <span class="nx">customFont</span><span class="p">.</span><span class="nx">rel</span> <span class="o">=</span> <span class="s2">&#34;stylesheet&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		    <span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">customFont</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}());</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="修改站点的图标">修改站点的图标
+</h2><p>选择想要的图片转换为ico，在config.yaml中的文件中，配置如下内容
+<a class="link" href="https://convertio.co/zh/ico-converter/"  target="_blank" rel="noopener"
+    >ICO转换器</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">mainSections</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="l">post</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">featuredImageField</span><span class="p">:</span><span class="w"> </span><span class="l">image</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">rssFullContent</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="l">/img/1.ico</span><span class="w">
+</span></span></span></code></pre></div><h2 id="修改博客背景颜色">修改博客背景颜色
+</h2><p><strong>位置</strong>：assets\scss\variables.scss</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">    <span class="na">--body-background</span><span class="o">:</span> <span class="mh">#f4f9fb</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="头像旋转">头像旋转
+</h2><p>位置在<code>/assets/scss/custom.scss</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.sidebar</span> <span class="nt">header</span> <span class="nc">.site-avatar</span> <span class="nc">.site-logo</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transition</span><span class="o">:</span> <span class="ni">transform</span> <span class="mi">1</span><span class="mf">.65</span><span class="kt">s</span> <span class="ni">ease-in-out</span><span class="p">;</span> <span class="c1">// 旋转时间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nc">.sidebar</span> <span class="nt">header</span> <span class="nc">.site-avatar</span> <span class="nc">.site-logo</span><span class="nd">:hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="na">transform</span><span class="o">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="mi">360</span><span class="kt">deg</span><span class="p">);</span> <span class="c1">// 旋转角度为360度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h2 id="参考linshow的一些修改内容">参考linshow的一些修改内容
+</h2><p><code> ~\blog\assets\scss\custom.scss</code></p>
+<p>在这个下面修改了字体，但是修改字体内容只有一部分内容。特别特别的丑</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@font-face {
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  font-family: SmileySans; /* 名称自定义 */
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  src: url(&#39;/fonts/寒蝉手拙体_猫啃网.ttf&#39;) format(&#39;truetype&#39;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  /* 建议采用woff2格式，以降低容量大小，提高加载速度 */
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">body {
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  font-family: SmileySans;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//怎么设置所有文章都是这样子的呢？？现在这样子也太丑了吧？？
+</span></span></code></pre></div><h2 id="魔改ing">魔改ing
+</h2><p>.ico是 小小小小小的图标
+<a class="link" href="https://blog.csdn.net/2201_75288929/article/details/132507563"  target="_blank" rel="noopener"
+    >【Hugo】Stack主题的使用记录_hugo stack-CSDN博客</a> 讲的非常详细，从0到1的跨越，一些小细节也涉及到了。
+<a class="link" href="https://blog.linsnow.cn/p/modify-hugo/"  target="_blank" rel="noopener"
+    >（3）Stack主题的自定义</a> 圆角的可爱的</p>
+<p><a class="link" href="https://www.jianshu.com/p/f5377332487c"  target="_blank" rel="noopener"
+    >介绍一款Hugo主题皮肤stack的魔改版主题 - 简书</a></p>
+<p>颜色：</p>
+<p><img src="/Pasted%20image%2020240802170820.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h3 id="参考链接">参考链接
+</h3><p>【学习向】
+<a class="link" href="https://blog.gimo.me/posts/generating-cover-images-for-hugo-blog-posts/"  target="_blank" rel="noopener"
+    >给 Hugo 博客文章自动生成分享图 | Yuanji&rsquo;s Blog</a></p>
+<p>【欣赏向】
+简约美 <a class="link" href="https://io-oi.me/life/"  target="_blank" rel="noopener"
+    >Life | reuixiy</a>
+很有趣，小表情很多，mac小表情：<a class="link" href="https://blog.linsnow.cn/"  target="_blank" rel="noopener"
+    >L1nSn0w&rsquo;s Blog</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/hugo-obsidian%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/df4eee97ec03a2719dbd4de478e4aca.jpg" loading="lazy" data-key="" data-hash="/df4eee97ec03a2719dbd4de478e4aca.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">hugo&#43;obsidian搭建个人博客记录1️⃣</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["/resources/Sticker-100/"],"lang":"zh-CN","locale":{"admin":"dede🧐","placeholder":"👣踩一踩."},"pageview":true,"reaction":false,"requiredMeta":["name"],"search":false,"serverURL":"https://comment.linsnow.cn"});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 dededuud
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023006542</a> <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

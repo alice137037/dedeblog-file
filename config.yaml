@@ -51,8 +51,8 @@ params:
 
     footer:
         since: 2024
-        customText: <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023006542</a>
-        # 有自己域名后，更改为自己的域名
+        customText: <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2024083806号-1</a>
+        # 备案信息
 
     dateFormat:
         published: Jan 02, 2006
@@ -213,32 +213,36 @@ menu:
 
     social:
         - identifier: rss
+          weight: 4
           name: RSS
           url: /index.xml
           params:
             newTab: true ## 是否在新标签中打开
-            icon: rss
+            icon: rss2
         
         - identifier: github
+          weight: 3
           name: GitHub
-          url: https://github.com/lin-snow ## dede修改
+          url: https://github.com/alice137037 ## dede修改
           params:
             newTab: true
-            icon: brand-github
+            icon: github2
             
         - identifier: memos
+          weight: 1
           name: Memos
           url: https://memos.linsnow.cn ## dede修改
           params:
             newTab: true
-            icon: memos
+            icon: 记录
 
-        - identifier: gallery
-          name: Gallery
+        - identifier: photo
+          weight: 2
+          name: Photography
           url: https://gallery.linsnow.cn ## dede修改
           params:
             newTab: true
-            icon: gallery
+            icon: photo
 related:
     includeNewer: true
     threshold: 60

@@ -3,11 +3,11 @@
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
-    <!-- ---ÕâÊÇÎÒÃÇÌí¼Ó½øÈ¥µÄ--------- -->
-    <!-- Ê×Ò³»¶Ó­×Ö·ù°å¿é -->
+    <!-- ---ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó½ï¿½È¥ï¿½ï¿½--------- -->
+<!-- é¦–é¡µæ¬¢è¿Žå­—å¹… -->
 <div class="welcome">
     <p style="font-size: 2rem; text-align: center; font-weight: bold">
-        <span class="shake"> ? </span>
+        <span class="shake"> ðŸ‘‹ </span>
         <span class="jump-text1" > Welcome</span>
         <span class="jump-text2"> To </span>
         <span class="jump-text3" style="color:#b1ce9d">de</span><span class="jump-text4" style="color:#e99312"></span
@@ -17,7 +17,7 @@
         <span class="jump-text9" style="color:#b1ce9d">Blog</span>
     </p>
 </div>
-    <!-- ------Ê×Ò³»¶Ó­×Ö·ù°å¿é------ -->
+    <!-- ------ï¿½ï¿½Ò³ï¿½ï¿½Ó­ï¿½Ö·ï¿½ï¿½ï¿½ï¿½------ -->
     
     <section class="article-list">
         {{ range $index, $element := $pag.Pages }}

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="起步 搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非">
+<title>搭建个人博客记录1️⃣🎉🎉🎉</title>
+
+<link rel='canonical' href='http://localhost:1313/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/'>
+
+<link rel="stylesheet" href="/scss/style.min.cf7ed074ed3060b5e21265e12afda3e0ca7b7acaa7a264169547137c6d293ca4.css"><meta property='og:title' content="搭建个人博客记录1️⃣🎉🎉🎉">
+<meta property='og:description' content="起步 搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非">
+<meta property='og:url' content='http://localhost:1313/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/'>
+<meta property='og:site_name' content='dede&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:tag' content='obsidian' /><meta property='article:published_time' content='2024-08-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-08-02T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/df4eee97ec03a2719dbd4de478e4aca.jpg' />
+<meta name="twitter:title" content="搭建个人博客记录1️⃣🎉🎉🎉">
+<meta name="twitter:description" content="起步 搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/df4eee97ec03a2719dbd4de478e4aca.jpg' />
+    <link rel="shortcut icon" href="/img/1.ico" />
+
+  
+
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+<script>  
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended">
+
+
+        <div id="article-toolbar" style="position: sticky;top: 5px;z-index: 1000;">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#起步">起步</a></li>
+    <li><a href="#hugo搭建">hugo搭建</a>
+      <ol>
+        <li><a href="#参考链接">参考链接</a></li>
+        <li><a href="#搭建过程">搭建过程</a></li>
+        <li><a href="#仓库文件组成">仓库文件组成</a></li>
+        <li><a href="#文章模版">文章模版</a></li>
+        <li><a href="#github-action自动上传">Github Action自动上传</a></li>
+        <li><a href="#域名解析">域名解析</a></li>
+        <li><a href="#二级域名设置">二级域名设置</a></li>
+        <li><a href="#错误一览">错误一览</a>
+          <ol>
+            <li><a href="#除了主页外其他页面的头像无法正常显示">除了主页外，其他页面的头像无法正常显示</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#链接obsidian">链接Obsidian</a>
+      <ol>
+        <li><a href="#第一次尝试">第一次尝试</a></li>
+        <li><a href="#第二次尝试">第二次尝试</a></li>
+        <li><a href="#已有插件">已有插件</a></li>
+        <li><a href="#错误一览-1">错误一览</a>
+          <ol>
+            <li><a href="#自动生成文件报错">自动生成文件报错</a></li>
+            <li><a href="#博客中一级与二级目录一致无区分">博客中一级与二级目录一致，无区分</a></li>
+            <li><a href="#dateview识别不出来前缀">dateview识别不出来前缀</a></li>
+            <li><a href="#无法安装插件git">无法安装插件“GIT”</a></li>
+            <li><a href="#git插件和教程不一致">git插件和教程不一致</a></li>
+            <li><a href="#尝试obsidian-gitpull自动化并放弃">尝试obsidian gitpull自动化，并放弃</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#图床">图床</a>
+      <ol>
+        <li><a href="#githubpicgo">github+picgo</a></li>
+        <li><a href="#giteepicgo">gitee+picgo</a></li>
+        <li><a href="#阿里云七牛云picgo">阿里云/七牛云+picgo</a></li>
+        <li><a href="#minio">MinIO</a></li>
+        <li><a href="#尝试上传阿里服务器">尝试上传阿里服务器</a></li>
+        <li><a href="#错误一览-2">错误一览</a>
+          <ol>
+            <li><a href="#nodejs测试时npm下载内容不成功">node.js测试时，npm下载内容不成功</a></li>
+          </ol>
+        </li>
+        <li><a href="#obsidian-picgo上传图床失败">obsidian picgo上传图床失败</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/">
+                
+                    <img src="/df4eee97ec03a2719dbd4de478e4aca.jpg" loading="lazy" alt="Featured image of post 搭建个人博客记录1️⃣🎉🎉🎉" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/" style="background-color: #2a9d8f; color: #fff;">
+                博客建设
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3/">搭建个人博客记录1️⃣🎉🎉🎉</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 02, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 9 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><img src="/df4eee97ec03a2719dbd4de478e4aca.jpg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="起步">起步
+</h2><p>搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非常心动。于是就有这个<code>dededuud'blog</code>啦！</p>
+<p>【平台选择】</p>
+<p>依旧延续自己举棋不定的风格，有“搭建博客”这个想法后第一步是全平台狂搜：搭建博客的平台选择；WordPress优缺点；Hugo优缺点；Hexo优缺点；相关主题的美观程度；友邻博客的浏览……</p>
+<p>考虑到：</p>
+<ol>
+<li>重度拖延症要赶紧动起来，所以希望平台搭建简洁方便</li>
+<li>相对主题好看，不需要太冗杂，搭建后我这个懒蛋过了这个时期后其实不太会探索更多内容。</li>
+<li>稳定，不想再重复搭建TAT</li>
+</ol>
+<p>基于这几点，综合来看选择了<code>hugo</code>。下面是自己的搭建过程，注意：没有详细的操作内容，可以点进去参考链接查看具体内容，大部分是个人向配置记录与报错解决。看起来我真的很多错误处理</p>
+<h2 id="hugo搭建">hugo搭建
+</h2><p>主参考教程如下：</p>
+<h3 id="参考链接">参考链接
+</h3><p><a class="link" href="https://sspai.com/post/87431"  target="_blank" rel="noopener"
+    >我的Hugo博客搭建记录 - 少数派</a></p>
+<p><a class="link" href="https://zhuanlan.zhihu.com/p/689914889"  target="_blank" rel="noopener"
+    ># 【阿里云服务器】学生党免费白嫖阿里云服务器10个月教程</a></p>
+<p><a class="link" href="https://help.aliyun.com/zh/dws/user-guide/quickly-register-a-new-domain-name?spm=a2c4g.11174283.0.0.5129de53sB9hBK"  target="_blank" rel="noopener"
+    >官方文档：# 从域名注册到搭建网站</a></p>
+<p><a class="link" href="https://beian.aliyun.com/pcContainer/myorder?spm=a2c4g.11186623.0.0.74e75817Bq0MFc&amp;accounttraceid=7d8f5e923dd7432787df19b8a5de406adndu"  target="_blank" rel="noopener"
+    >备案</a></p>
+<h3 id="搭建过程">搭建过程
+</h3><p>具体搭建过程如下：</p>
+<ol>
+<li>下载：hugo、git、vscode、obsidian（已有）
+<ul>
+<li>git配置，与github链接</li>
+<li>购买阿里云服务器（上述链接，学生免费获得10个月）（后续没有用到，托管到github上）</li>
+<li>购买阿里云域名（花费35元）（至今还没有审核成功）</li>
+</ul>
+</li>
+<li>基本配置：使用模版<code>stack</code>，下载复制相关文件夹。修改，<code>config.yaml</code>，更新自己设置
+<ul>
+<li>⚠️ 任何修改尽量不要在主题文件夹修改，免得以后忘了都修改过什么内容，更新主题的时候把自己配置的内容覆盖了。</li>
+<li><code>hugo server</code></li>
+<li>localhost:1313 预览</li>
+<li>文章<code>yaml</code>模版设置</li>
+</ul>
+</li>
+<li>部署到Vercel
+<ul>
+<li>git将文件push到github，github与Vercel联动部署</li>
+<li>设置github page（页面效果没有Vercel好看）</li>
+</ul>
+</li>
+</ol>
+<h3 id="仓库文件组成">仓库文件组成
+</h3><p>整个网站目录里，几个重要的文件夹：</p>
+<ol>
+<li>assets：存放图标、图片、js(ts)脚本文件，css(scss)样式文件；</li>
+<li>content：文章、页面、分类页面等文件；</li>
+<li>layouts：网页布局文件；</li>
+<li>public：hugo 编译后的网站文件夹；</li>
+<li>static：图片等静态文件；</li>
+<li>themes：主题文件夹。</li>
+</ol>
+<p>个人的文件夹tips</p>
+<ol>
+<li>obs_sctipts 目录用于存放 QuickAdd 脚本文件</li>
+<li><code>page</code>修改page下的<code>index.zh-cn</code> 中title可以更改导航栏名称</li>
+<li>文章的图片都存在<code>static</code>下。这样可以实现在obsidian中写文章，粘贴图片，自动放置在static文件夹下，obsidian内可以看到图片且博客也可以展示图片，而且不需要再手动更改👍</li>
+</ol>
+<p>有两种pictures等文件存放方式比较建议。</p>
+<ol>
+<li><code>post</code>文件夹下一篇文章是一个文件夹，文件夹里文章文件命名为<code>index.md</code>，所有图片文件都存放在这个文件夹下，引用时直接用图片名就可以<code>![图名](image.png)</code></li>
+<li><code>post</code>文件夹下直接存放 Markdown 文件，图片存储在<code>static/images</code>文件夹下，引用时<code>![图名](/images/image.png)</code>（obsidian）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dedeblog
+</span></span><span class="line"><span class="cl">├── archetypes                内容模版目录
+</span></span><span class="line"><span class="cl">│   └── default.md            新建文章的模版
+</span></span><span class="line"><span class="cl">├── assets                    存放图标、图片、js，css
+</span></span><span class="line"><span class="cl">│   └── icons                 svg的小图标类
+</span></span><span class="line"><span class="cl">│   └── images                存放头像
+</span></span><span class="line"><span class="cl">│   └── scss                  一些css文件的配置情况（可以修改背景颜色）
+</span></span><span class="line"><span class="cl">├── content                   内容目录
+</span></span><span class="line"><span class="cl">│   └── cagtegories           分类的页面目录
+</span></span><span class="line"><span class="cl">│   └── page                  存放左侧导航栏的一些配置
+</span></span><span class="line"><span class="cl">│   └── post                  文章md文章
+</span></span><span class="line"><span class="cl">├── data                      数据目录
+</span></span><span class="line"><span class="cl">├── i18n                      数据目录
+</span></span><span class="line"><span class="cl">├── layouts                   网站模版目录
+</span></span><span class="line"><span class="cl">│   ├── 404.html              404面目模版
+</span></span><span class="line"><span class="cl">│   ├── _default              默认模版目录
+</span></span><span class="line"><span class="cl">│   │   ├── baseof.html       基础模版
+</span></span><span class="line"><span class="cl">│   │   ├── list.html         列表页面模版
+</span></span><span class="line"><span class="cl">│   │   └── single.html       单页面模版
+</span></span><span class="line"><span class="cl">│   ├── index.html            首页模版
+</span></span><span class="line"><span class="cl">│   └── partials              模块模版目录
+</span></span><span class="line"><span class="cl">│       ├── head.html         HEAD模块模版
+</span></span><span class="line"><span class="cl">│       ├── head_fonts.html
+</span></span><span class="line"><span class="cl">│       ├── hook_head_end.html
+</span></span><span class="line"><span class="cl">│       └── sidebar.html
+</span></span><span class="line"><span class="cl">├── obs_sctipts               Obsidian的一些建设内容，自动化内容
+</span></span><span class="line"><span class="cl">├── static                    静态文件目录（存放文章页面的一些图片）
+</span></span><span class="line"><span class="cl">└── themes                    主题目录
+</span></span><span class="line"><span class="cl">└── public                    hugo 编译后的网站
+</span></span><span class="line"><span class="cl">└── .gitignore                上传到仓库内忽略的内容
+</span></span><span class="line"><span class="cl">└── config.yaml              
+</span></span><span class="line"><span class="cl">└── deploy.sh                 备份的半自动文件
+</span></span></code></pre></div><h3 id="文章模版">文章模版
+</h3><p>具体来说，<code>draft</code>是否为草稿，<code>image</code>同样引用/static下的图片。<code>date</code>手动选择（本来有代码可以根据文章生成时间自动填写，但是自己总是报错，于是放弃）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: 标题
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">description: 小标题
+</span></span><span class="line"><span class="cl">featured: true
+</span></span><span class="line"><span class="cl">image: 封面
+</span></span><span class="line"><span class="cl">keywords: 
+</span></span><span class="line"><span class="cl">slug: 
+</span></span><span class="line"><span class="cl">canonicalURL: 
+</span></span><span class="line"><span class="cl">categories:
+</span></span><span class="line"><span class="cl">  - 分类
+</span></span><span class="line"><span class="cl">math: true
+</span></span><span class="line"><span class="cl">tags:
+</span></span><span class="line"><span class="cl">  - 测试
+</span></span><span class="line"><span class="cl">date:
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div><h3 id="github-action自动上传">Github Action自动上传
+</h3><p><a class="link" href="https://zhuanlan.zhihu.com/p/497671233"  target="_blank" rel="noopener"
+    ># Hugo 博客写作最佳实践</a>
+<a class="link" href="https://blog.linsnow.cn/p/deploy-hugo/"  target="_blank" rel="noopener"
+    >linsnow部署hugo网站</a></p>
+<p>参考上述内容整合后，可以实现功能如下：</p>
+<ol>
+<li>dedeblog用于存放hugo博客生成的文件；dedeblog-file 用于存放原码。</li>
+<li>自动化上传github，使用deploy.sh 文件（通过 git bash），自动上传加载。</li>
+<li>双击打开运行<code>deploy.sh</code>即可自动推送文件到仓库,以后写完博客或修改博客后都需要运行一下<code>deploy.sh</code>,才能部署到云</li>
+</ol>
+<h3 id="域名解析">域名解析
+</h3><p>从7月底申请，到8月12号才正式通过域名备案。</p>
+<h3 id="二级域名设置">二级域名设置
+</h3><p>尝试30min发现这么简单的事情却一直失败，原因是：我的二级域名  blog 输成了 bolg</p>
+<p>memos</p>
+<p>Photography</p>
+<p><a class="link" href="https://blog.csdn.net/weixin_62392149/article/details/135114752"  target="_blank" rel="noopener"
+    >利用阿里云CDN加速vercel上的网站—2023最新可用-CSDN博客</a></p>
+<p><a class="link" href="https://zhuanlan.zhihu.com/p/621179830"  target="_blank" rel="noopener"
+    >zhuanlan.zhihu.com/p/621179830</a></p>
+<p><code>vercel Generating SSL Certificate</code> 配置后需要等待一下子，ssl证书生成后，就可以访问啦</p>
+<p>Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.</p>
+<h3 id="错误一览">错误一览
+</h3><h4 id="除了主页外其他页面的头像无法正常显示">除了主页外，其他页面的头像无法正常显示
+</h4><p>呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。</p>
+<p><a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/977"  target="_blank" rel="noopener"
+    >site-avatar无法正常显示 · Issue #977 · CaiJimmy/hugo-theme-stack · GitHub</a></p>
+<p>把头像放到 <code>assets</code> 文件夹下，然后 <code>local = true</code>或者改成 `src = &ldquo;/images/favicon.png&rdquo;</p>
+<h2 id="链接obsidian">链接Obsidian
+</h2><h3 id="第一次尝试">第一次尝试
+</h3><p><a class="link" href="https://www.morick66.com/p/20240321055915/#%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0memos"  target="_blank" rel="noopener"
+    >我的Hugo博客搭建记录</a>
+部分内容看不太懂（尤其是添加按钮阶段，总觉得特别奇怪）？困惑？以及感慨一下Dataview功能的可塑性。</p>
+<h3 id="第二次尝试">第二次尝试
+</h3><p><a class="link" href="https://zhuanlan.zhihu.com/p/497671233"  target="_blank" rel="noopener"
+    >hugo博客一键上传+自动创建文章+静态资源图床建设</a></p>
+<p><a class="link" href="https://zhuanlan.zhihu.com/p/497682431"  target="_blank" rel="noopener"
+    >hugo仪表盘</a></p>
+<p><a class="link" href="https://zhuanlan.zhihu.com/p/680539092"  target="_blank" rel="noopener"
+    >集成管理+增加按钮</a></p>
+<p><a class="link" href="https://cloud.tencent.com/developer/article/2122085"  target="_blank" rel="noopener"
+    >Markdown博客文章写作最佳体验，hugo+Obisidian+Vscode-腾讯云开发者社区-腾讯云</a></p>
+<p><a class="link" href="https://blog.zhangyingwei.com/posts/2022m4d11h19m42s28/"  target="_blank" rel="noopener"
+    >Hugo 博客写作最佳实践 | 胡说</a></p>
+<p>以上文章链接均是出自于一个作者的系列文章，整体看下来受益匪浅。
+目前自己obsidian的看板如下（还没有过多美化），按钮只有<code>新建博客</code>一项，可以自动新建一篇固定模版的md文件到/content/post/路径下，可以根据勾选项draft，选择是否发布（超级爽）
+<img src="/Pasted%20image%2020240802154512.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h3 id="已有插件">已有插件
+</h3><p>该仓库是新建的一个仓库，没有下载过多美化的插件，现在保留的都是支持功能+非常实用。</p>
+<ol>
+<li>Auto Link Title</li>
+<li>Buttons</li>
+<li>Charts</li>
+<li>Commander</li>
+<li>Dataview</li>
+<li>Emoji Toolbar</li>
+<li>Homepage</li>
+<li>QuickAdd</li>
+</ol>
+<h3 id="错误一览-1">错误一览
+</h3><h4 id="自动生成文件报错">自动生成文件报错
+</h4><p>通过<code>quickadd</code>一键生成文件总是报错：×放弃，自动化生成文件都是报错</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">plugin:quickadd:17783 QuickAdd: (ERROR) failed to run user script NewBlog. Error:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Command failed: hugo new posts/2024-7-30day17h7m0s.md
+</span></span><span class="line"><span class="cl">&#39;hugo&#39; �����ڲ����ⲿ���Ҳ���ǿ����еĳ���
+</span></span><span class="line"><span class="cl">���������ļ���
+</span></span></code></pre></div><p>√没放弃！！！发现是没有hugo的环境，配置了绝对环境后，就ok了！真的流眼泪了TAT，非常流眼泪。居然这样就解决了呜呜呜呜呜呜</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="err">##</span> <span class="nx">之前</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span> <span class="p">}</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">exec</span><span class="p">(</span><span class="s1">&#39;hugo new posts/&#39;</span> <span class="o">+</span><span class="nx">fileName</span><span class="p">,{</span><span class="nx">cwd</span><span class="o">:</span> <span class="nx">app</span><span class="p">.</span><span class="nx">fileManager</span><span class="p">.</span><span class="nx">vault</span><span class="p">.</span><span class="nx">adapter</span><span class="p">.</span><span class="nx">basePath</span><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">##</span> <span class="nx">更改后</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">hugoPath</span> <span class="o">=</span> <span class="s2">&#34;D:\\hugo\\bin\\hugo.exe&#34;</span><span class="p">;</span> <span class="c1">// 替换为hugo的实际路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="p">{</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span> <span class="p">}</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">exec</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">hugoPath</span><span class="si">}</span><span class="sb"> new post/</span><span class="si">${</span><span class="nx">fileName</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">cwd</span><span class="o">:</span> <span class="nx">app</span><span class="p">.</span><span class="nx">fileManager</span><span class="p">.</span><span class="nx">vault</span><span class="p">.</span><span class="nx">adapter</span><span class="p">.</span><span class="nx">basePath</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span> 
+</span></span></code></pre></div><p>注意一点：stack模版中！存储文章的地方是<code>post</code>而不是<code>posts</code>!!!有部分错误的原因来源于此。</p>
+<h4 id="博客中一级与二级目录一致无区分">博客中一级与二级目录一致，无区分
+</h4><p>取消一级目录，文章直接从二级目录开始写起
+<img src="/Pasted%20image%2020240802162214.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h4 id="dateview识别不出来前缀">dateview识别不出来前缀
+</h4><p><code>---</code>后面不要有空格！！！！
+冒号后面要有空格！！</p>
+<h4 id="无法安装插件git">无法安装插件“GIT”
+</h4><p>为什么？W五方面？为什么？为什么？为什么？为什么？？？？？？</p>
+<p>why？？？
+奥，，网太慢了</p>
+<h4 id="git插件和教程不一致">git插件和教程不一致
+</h4><p>“Git is not ready. when all settings are correct you canconfigure auto backup, etc.
+I am having the same issue, even though the vault opened is cloned from my repo. This is what it shows me when I start Obsidian -”</p>
+<p><a class="link" href="https://forum-zh.obsidian.md/t/topic/33184"  target="_blank" rel="noopener"
+    >Site Unreachable</a>
+呜呜呜感谢！应该是这样子的：
+在Custom Git directory path 填上安装路径，忘记安装路径可以运行下面代码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">D:<span class="se">\d</span>ede-downdown<span class="se">\G</span>it<span class="se">\c</span>md<span class="se">\g</span>it.exe
+</span></span><span class="line"><span class="cl">where git
+</span></span></code></pre></div><h4 id="尝试obsidian-gitpull自动化并放弃">尝试obsidian gitpull自动化，并放弃
+</h4><p>zhuanlan.zhihu.com/p/657924375](<a class="link" href="https://zhuanlan.zhihu.com/p/657924375"  target="_blank" rel="noopener"
+    >https://zhuanlan.zhihu.com/p/657924375</a>)</p>
+<p><a class="link" href="https://blog.csdn.net/pythondh1/article/details/134242400"  target="_blank" rel="noopener"
+    >obsidian使用github同步踩坑教程_obsidian git-CSDN博客</a></p>
+<p>push 不上去啊 放弃了用git 一键推送，不要东一榔头西一棒槌</p>
+<h2 id="图床">图床
+</h2><p>自己刚开始抱希望于单独托管在图床，通过外链引用，这样子比较方便，速度也快。于是经过漫长的尝试后，终于放！弃！啦！又重新回归obsidian本地存储的方式。这里是记录探索过程，希望对大家有一定的参考意义。</p>
+<h3 id="githubpicgo">github+picgo
+</h3><p><a class="link" href="https://post.smzdm.com/p/a5x72ov8/"  target="_blank" rel="noopener"
+    >将 Obsidian 结合 PicGo 和 Image Auto Upload 插件，并使用 GitHub 作为图床_服务软件_什么值得买</a></p>
+<p>github图片显示太慢了，不连梯完全加载不出来，影响阅读体验。❌</p>
+<h3 id="giteepicgo">gitee+picgo
+</h3><p><a class="link" href="https://blog.csdn.net/m0_49448331/article/details/136899591"  target="_blank" rel="noopener"
+    >Obsidian+PicGo+Gitee搭建免费图床_gitee 图床-CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/qq_57581439/article/details/129251624?spm=1001.2014.3001.5506"  target="_blank" rel="noopener"
+    >使用gitee搭建图床，并解决防盗链问题_gitee图床-CSDN博客</a></p>
+<p><strong>进程</strong></p>
+<ol>
+<li>已经下载node.js（配置好环境）✔️</li>
+<li>搭建图床仓库，gitee+picgo✔️</li>
+<li>在obsidian 中下载第三方插件 image auto upload plugin✔️</li>
+<li>防盗链，在博客完全显示不了图片❌</li>
+<li>尝试解决❌ out
+<strong>小tips</strong></li>
+</ol>
+<p>从现在开始，你所有 Obsidian 中的图片，都会自动上传到图片，在 Obsidian 中，仅仅保存一个链接。那么问题来了：我之前notes中的图片怎么上传呢？你可以以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl / Command + P，并选择 &ldquo;upload all images&rdquo;。</p>
+<h3 id="阿里云七牛云picgo">阿里云/七牛云+picgo
+</h3><p><a class="link" href="https://www.cnblogs.com/chuangblog/p/17654579.html"  target="_blank" rel="noopener"
+    >解决Typora+阿里云+PicGo部分图片上传失败的问题 - 最爱喝开水 - 博客园</a></p>
+<p>太贵了我是穷鬼🥺</p>
+<h3 id="minio">MinIO
+</h3><p><a class="link" href="https://blog.csdn.net/qq_57581439/article/details/126192492?spm=1001.2014.3001.5502"  target="_blank" rel="noopener"
+    >使用Docker搭建分布式文件存储系统MinIO_minio docker-CSDN博客</a></p>
+<p><a class="link" href="https://blog.csdn.net/qq_60308100/article/details/134651592?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172248319116800182794990%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=172248319116800182794990&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-134651592-null-null.142%5ev100%5epc_search_result_base2&amp;utm_term=MinIO%E5%9B%BE%E5%BA%8A"  target="_blank" rel="noopener"
+    >Typora+PicGo+Minio搭建博客图床_minio图床-CSDN博客</a></p>
+<p>仅阅读未实践</p>
+<h3 id="尝试上传阿里服务器">尝试上传阿里服务器
+</h3><p><a class="link" href="https://www.cnblogs.com/bashenandi/p/linux-aliyun-ecs-ssh.html"  target="_blank" rel="noopener"
+    >阿里云ECS每天一件事D1：配置SSH - 雨帝夜泪 - 博客园</a></p>
+<p><a class="link" href="https://blog.csdn.net/BAR_WORKSHOP/article/details/121078946?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hugo%20%E9%98%BF%E9%87%8C%E4%BA%91&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-121078946.142%5ev100%5epc_search_result_base2"  target="_blank" rel="noopener"
+    >使用 Hugo 和阿里云ECS搭建个人站_hugo server -d ip-CSDN博客</a>（主要）</p>
+<p><a class="link" href="https://www.cnblogs.com/LynneHuan/p/17822201.html#2023-04-05%E6%9B%B4%E6%96%B0"  target="_blank" rel="noopener"
+    >使用aliyun+hugo搭建个人博客 - LynneHuan - 博客园</a></p>
+<p>放弃了，就目前这样挺好的，我很满意（缓缓躺下</p>
+<h3 id="错误一览-2">错误一览
+</h3><p>没想到吧，连放弃的内容都有错误一览</p>
+<h4 id="nodejs测试时npm下载内容不成功">node.js测试时，npm下载内容不成功
+</h4><p><a class="link" href="https://blog.csdn.net/HL031125/article/details/138816270"  target="_blank" rel="noopener"
+    >Node.js安装及环境配置（超详细！保姆级！！）_nodejs安装及环境配置-CSDN博客</a></p>
+<p>发现是网络问题，配置镜像网站</p>
+<h3 id="obsidian-picgo上传图床失败">obsidian picgo上传图床失败
+</h3><p>设置完图床点击 设为默认图床</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+            <a href="/tags/obsidian/">Obsidian</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%952%EF%B8%8F%E2%83%A3/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">搭建个人博客记录2️⃣</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"copyright":false,"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["/resources/Sticker-100/"],"lang":"zh-CN","locale":{"admin":"dede🧐","placeholder":"👣踩一踩."},"pageview":true,"reaction":false,"requiredMeta":["name"],"search":false,"serverURL":"https://comment.linsnow.cn"});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 dededuud
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023006542</a> <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
