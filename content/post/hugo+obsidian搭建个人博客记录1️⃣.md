@@ -164,6 +164,11 @@ Photography
 
 Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.
 
+### SSL配置
+[【一分钟】轻松搞定，SSL证书自动续签，解决阿里云SSL免费证书每3个月失效问题](http://www.360doc.com/content/24/0520/17/360939_1123836588.shtml)
+[阿里云申请域名及域名配置https\_阿里云单域名配置一个ip多个端口怎么设置-CSDN博客](https://blog.csdn.net/weixin_43288858/article/details/118437535)
+
+
 
 ### 错误一览
 #### 除了主页外，其他页面的头像无法正常显示

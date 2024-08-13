@@ -44,7 +44,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /img/1.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /img/3.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
     ## 需改正之处
     ## 是生成图片导航栏中，前面一个小小的内容~ 
     ##指定网站的 favicon（网站图标）的路径。这里指定的路径是 /img/favicon.ico，这意味着网站图标存放在站点文件夹的 static/img 文件夹中。

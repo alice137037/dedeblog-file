@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3hugo-obsidian/'>
 
-<link rel="stylesheet" href="/scss/style.min.e06a4d4fb6f8101d93879ddacf1832ca0a0206327ad2b99bd8a673414aeaa2ee.css"><meta property='og:title' content="搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian">
+<link rel="stylesheet" href="/scss/style.min.70e3e9a86879f81b1ab4650d33a4c2a505cf95620c0fa4c021927a0e3436da56.css"><meta property='og:title' content="搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian">
 <meta property='og:description' content="起步 搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非">
 <meta property='og:url' content='https://blog.dededuud.cn/p/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%951%EF%B8%8F%E2%83%A3hugo-obsidian/'>
 <meta property='og:site_name' content='dede&#39;s Blog'>
@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="搭建个人博客记录1️⃣🎉🎉🎉hugo+obsidian">
 <meta name="twitter:description" content="起步 搭建博客在很早很早以前都写在便签备忘录里面，但是总是没有动手开始做，一次又一次搁浅直到上一周看到一篇设计师姐妹搭建作品集艺术向的博客，非"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.dededuud.cn/df4eee97ec03a2719dbd4de478e4aca.jpg' />
-    <link rel="shortcut icon" href="/img/1.ico" />
+    <link rel="shortcut icon" href="/img/3.ico" />
 
   
 
@@ -34,6 +34,10 @@
 		    document.head.appendChild(customFont);
 		}());
 </script>
+<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+
+
+
 
     </head>
     <body class="
@@ -110,6 +114,7 @@
         <li><a href="#github-action自动上传">Github Action自动上传</a></li>
         <li><a href="#域名解析">域名解析</a></li>
         <li><a href="#二级域名设置">二级域名设置</a></li>
+        <li><a href="#ssl配置">SSL配置</a></li>
         <li><a href="#错误一览">错误一览</a>
           <ol>
             <li><a href="#除了主页外其他页面的头像无法正常显示">除了主页外，其他页面的头像无法正常显示</a></li>
@@ -385,6 +390,11 @@
     >zhuanlan.zhihu.com/p/621179830</a></p>
 <p><code>vercel Generating SSL Certificate</code> 配置后需要等待一下子，ssl证书生成后，就可以访问啦</p>
 <p>Good news! Your DNS records are set up correctly, but it can take some time for them to propagate globally.</p>
+<h3 id="ssl配置">SSL配置
+</h3><p><a class="link" href="http://www.360doc.com/content/24/0520/17/360939_1123836588.shtml"  target="_blank" rel="noopener"
+    >【一分钟】轻松搞定，SSL证书自动续签，解决阿里云SSL免费证书每3个月失效问题</a>
+<a class="link" href="https://blog.csdn.net/weixin_43288858/article/details/118437535"  target="_blank" rel="noopener"
+    >阿里云申请域名及域名配置https_阿里云单域名配置一个ip多个端口怎么设置-CSDN博客</a></p>
 <h3 id="错误一览">错误一览
 </h3><h4 id="除了主页外其他页面的头像无法正常显示">除了主页外，其他页面的头像无法正常显示
 </h4><p>呜呜呜太感动了，太感动了，居然搜索到同款疑问了，真的困扰我很久。</p>
@@ -647,15 +657,64 @@ I am having the same issue, even though the vault opened is cloned from my repo.
         &copy; 
         
         2024 dededuud
+        
+
+
     </section>
     
     <section class="powerby">
         
             <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2024083806号-1</a> <br/>
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+
+        
     </section>
+
+    
+    <section class="running-time">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+        </section>
+    
+    
+    <section class="totalcount">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        发表了<span class="bold-text">3篇</span>文章
+        总计<span class="bold-text">6.65k</span>字
+    </section>
+
+
+    <div class="busuanzi-footer">
+        <span id="busuanzi_container_site_pv">
+            本站总访问量<span id="busuanzi_value_site_pv" class="highlight-text">次</span>
+        </span>
+        <span id="busuanzi_container_site_uv">
+            本站访客数<span id="busuanzi_value_site_uv" class="highlight-text">人次</span>
+        </span>
+    </div>
+
+
+
+
+
 </footer>
+
+
 
 
     
@@ -753,6 +812,20 @@ I am having the same issue, even though the vault opened is cloned from my repo.
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2024-7-27'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>

@@ -6,14 +6,14 @@
 
 <link rel='canonical' href='https://blog.dededuud.cn/tags/%E6%B5%8B%E8%AF%95/'>
 
-<link rel="stylesheet" href="/scss/style.min.e06a4d4fb6f8101d93879ddacf1832ca0a0206327ad2b99bd8a673414aeaa2ee.css"><meta property='og:title' content="Tag: 测试 - dede's Blog">
+<link rel="stylesheet" href="/scss/style.min.70e3e9a86879f81b1ab4650d33a4c2a505cf95620c0fa4c021927a0e3436da56.css"><meta property='og:title' content="Tag: 测试 - dede's Blog">
 <meta property='og:description' content="转码日志🖥️">
 <meta property='og:url' content='https://blog.dededuud.cn/tags/%E6%B5%8B%E8%AF%95/'>
 <meta property='og:site_name' content='dede&#39;s Blog'>
 <meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-08-12T00:00:00&#43;00:00 '/>
 <meta name="twitter:title" content="Tag: 测试 - dede's Blog">
 <meta name="twitter:description" content="转码日志🖥️"><link rel="alternate" type="application/rss&#43;xml" href="https://blog.dededuud.cn/tags/%E6%B5%8B%E8%AF%95/index.xml">
-    <link rel="shortcut icon" href="/img/1.ico" />
+    <link rel="shortcut icon" href="/img/3.ico" />
 
   
 
@@ -33,6 +33,10 @@
 		    document.head.appendChild(customFont);
 		}());
 </script>
+<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script>
+
+
+
 
     </head>
     <body class="">
@@ -446,15 +450,64 @@
         &copy; 
         
         2024 dededuud
+        
+
+
     </section>
     
     <section class="powerby">
         
             <a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2024083806号-1</a> <br/>
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+
+        
     </section>
+
+    
+    <section class="running-time">
+        本博客已稳定运行
+        <span id="runningdays" class="running-days"></span>
+        </section>
+    
+    
+    <section class="totalcount">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        发表了<span class="bold-text">3篇</span>文章
+        总计<span class="bold-text">6.65k</span>字
+    </section>
+
+
+    <div class="busuanzi-footer">
+        <span id="busuanzi_container_site_pv">
+            本站总访问量<span id="busuanzi_value_site_pv" class="highlight-text">次</span>
+        </span>
+        <span id="busuanzi_container_site_uv">
+            本站访客数<span id="busuanzi_value_site_uv" class="highlight-text">人次</span>
+        </span>
+    </div>
+
+
+
+
+
 </footer>
+
+
 
 
             </main>
@@ -474,6 +527,20 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2024-7-27'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>
