@@ -6,3 +6,12 @@ menu:
         params:
             icon: home
 ---
+<html>
+  <head>
+    <meta name="baidu-site-verification" content="codeva-d8Wn4DE61c" />
+    <title>My title</title>
+  </head>
+  <!-- <body>
+    page contents
+  </body> -->
+</html>

@@ -22,6 +22,34 @@ date: 2024-08-12
 ## 🌍 240814
 ### 让百度搜索到我
 [Site Unreachable](https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC)
+登陆[百度统计主页](https://tongji.baidu.com/) ，按照指引，添加网站、获取统计code。将代码放到`themes/hugo-theme-stack/layouts/partials/head/head.html`最后，一次性安装，全站皆可被搜索到。如作者：
+
+```js
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?c376f3e13b35b80fa5d4695e8dd859b1";
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+```
+
+
+提交站点视图
+
+1. 登陆[百度搜索资源platform](https://ziyuan.baidu.com/dashboard/index)
+2. 添加站点，下载验证文件，然后把验证文件放在网站 public 文件夹内。点击 “验证” 即可。
+3. 选择左侧菜单→普通收录→sitemap→提交站点地图 URL
+
+可能由于博客刚建立，被considered是低质站点，过几天再来看看。。。😭😭😭
+~~~
+不到一分钟前blog.dededuud.cn使用文件验证  
+原因：未知原因:308。  
+问题分析&解决办法： 未知原因:308。
+~~~
+
 
 
 ### 代码块增加一键复制

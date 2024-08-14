@@ -232,7 +232,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 6 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -254,8 +254,30 @@
 <h2 id="-240814">🌍 240814
 </h2><h3 id="让百度搜索到我">让百度搜索到我
 </h3><p><a class="link" href="https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC"  target="_blank" rel="noopener"
-    >Site Unreachable</a></p>
-<h3 id="代码块增加一键复制">代码块增加一键复制
+    >Site Unreachable</a>
+登陆<a class="link" href="https://tongji.baidu.com/"  target="_blank" rel="noopener"
+    >百度统计主页</a> ，按照指引，添加网站、获取统计code。将代码放到<code>themes/hugo-theme-stack/layouts/partials/head/head.html</code>最后，一次性安装，全站皆可被搜索到。如作者：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">_hmt</span> <span class="o">=</span> <span class="nx">_hmt</span> <span class="o">||</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">hm</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;script&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">hm</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">&#34;https://hm.baidu.com/hm.js?c376f3e13b35b80fa5d4695e8dd859b1&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;script&#34;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">hm</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">})();</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></div><p>提交站点视图</p>
+<ol>
+<li>登陆<a class="link" href="https://ziyuan.baidu.com/dashboard/index"  target="_blank" rel="noopener"
+    >百度搜索资源platform</a></li>
+<li>添加站点，下载验证文件，然后把验证文件放在网站 public 文件夹内。点击 “验证” 即可。</li>
+<li>选择左侧菜单→普通收录→sitemap→提交站点地图 URL</li>
+</ol>
+<p>可能由于博客刚建立，被considered是低质站点，过几天再来看看。。。😭😭😭</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">不到一分钟前blog.dededuud.cn使用文件验证  
+</span></span><span class="line"><span class="cl">原因：未知原因:308。  
+</span></span><span class="line"><span class="cl">问题分析&amp;解决办法： 未知原因:308。
+</span></span></code></pre></div><h3 id="代码块增加一键复制">代码块增加一键复制
 </h3><p>参考代码：<a class="link" href="https://huangzhongde.cn/post/2020-02-21-hugo-code-copy-to-clipboard/"  target="_blank" rel="noopener"
     >Hugo插件之代码块拷贝插件 | 黄忠德的博客</a></p>
 <h3 id="代码块增加行数">代码块增加行数
@@ -693,7 +715,7 @@ stack主题有相应的内容，只需要修改配置文件<code>config.yaml</co
             
         
         本博客已发表了<span class="bold-text">3篇</span>文章
-        总计<span class="bold-text">7.23k</span>字
+        总计<span class="bold-text">7.55k</span>字
     </section>
 
     
