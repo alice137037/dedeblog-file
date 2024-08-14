@@ -95,6 +95,7 @@ code {
   margin-left: -7px !important;
   margin-right: -12px;
   box-shadow: var(--shadow-l1) !important;
+  // line-height: 18px;
 
   &:hover {
     .copyCodeButton {
@@ -113,7 +114,17 @@ code {
     margin: 0;
     width: auto;
   }
+  // .highlight .ln {
+  //   width: 20px;
+  //   display: block;
+  //   float: left;
+  //   text-align: right;
+  //   user-select: none;
+  //   padding-right: 8px;
+  //   color: #ccc;
+  // }
 }
+
 
 // light模式下的代码块样式调整
 [data-scheme="light"] .article-content .highlight {

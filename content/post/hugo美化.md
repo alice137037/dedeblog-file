@@ -16,9 +16,44 @@ date: 2024-08-12
 ---
 部分修改内容的时候，需要搜索stack主题下的内容。因为不同主题stack下面的文件是不同的。
 
-## 🌍 240813
 ### 照片集页面的搭建
 [hugo-theme-gallery主题](https://themes.gohugo.io/themes/hugo-theme-gallery/)
+
+## 🌍 240814
+### 让百度搜索到我
+[Site Unreachable](https://hyrtee.github.io/2023/start-blog/#%E5%AF%BC%E5%85%A5busuanzi-js%E8%84%9A%E6%9C%AC)
+
+
+### 代码块增加一键复制
+参考代码：[Hugo插件之代码块拷贝插件 | 黄忠德的博客](https://huangzhongde.cn/post/2020-02-21-hugo-code-copy-to-clipboard/)
+
+### 代码块增加行数
+~~放弃了！❌~~
+stack主题有相应的内容，只需要修改配置文件`config.yaml`就可以实现了。
+~~~ yaml
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 5 ## 最大标题层级
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: false
+        tabWidth: 4
+
+~~~
+使用过程中发现个问题，行号是正常显示出来了，但是使用复制功能的时候，会连行号一起复制，这时修改自定义的css配置
+
+
+## 🌍 240813
 
 ### 缩小代码块字体
 默认的代码字体在移动端显示有点大了。在`assets/scss/partials/article.scss`内加上`font-size`设定：
